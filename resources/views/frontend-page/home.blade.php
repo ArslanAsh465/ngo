@@ -16,7 +16,8 @@
                             </div>
                             <div class="col-md-8">
                                 <h5 class="card-title">GIVE DONATION</h5>
-                                <p class="card-text">You can Donate online/ Donate by bank transfer/ Donate by Monthly/ Donate via SMS</p>
+                                <p class="card-text">You can Donate online/ Donate by bank transfer/ Donate by Monthly/
+                                    Donate via SMS</p>
                             </div>
                         </div>
                     </div>
@@ -33,7 +34,8 @@
                             </div>
                             <div class="col-md-8">
                                 <h5 class="card-title">BECOME A VOLUNTEER</h5>
-                                <p class="card-text">You can work directly with children and families, train our local staff, and fulfill both roles.</p>
+                                <p class="card-text">You can work directly with children and families, train our local
+                                    staff, and fulfill both roles.</p>
                             </div>
                         </div>
                     </div>
@@ -50,7 +52,8 @@
                             </div>
                             <div class="col-md-8">
                                 <h5 class="card-title">BECOME A SPONSOR</h5>
-                                <p class="card-text">You can sponsor a special child for one year that is <br>£360 per year/ £30 per month</p>
+                                <p class="card-text">You can sponsor a special child for one year that is <br>£360 per year/
+                                    £30 per month</p>
                             </div>
                         </div>
                     </div>
@@ -87,10 +90,12 @@
             <!-- Column 1 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="https://www.almudassar.org/wp-content/uploads/edd/2021/01/DSC_7587-366x220.jpg" class="card-img-top" alt="Image 1">
+                    <img src="https://www.almudassar.org/wp-content/uploads/edd/2021/01/DSC_7587-366x220.jpg"
+                        class="card-img-top" alt="Image 1">
                     <div class="card-body">
                         <h5 class="card-title">AL-MUDASSAR SCHOOL FOR DEAF</h5>
-                        <p class="card-text">Less than 5% of 1 million Deaf children in Pakistan have access to education.</p>
+                        <p class="card-text">Less than 5% of 1 million Deaf children in Pakistan have access to education.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -98,10 +103,12 @@
             <!-- Column 2 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="https://www.almudassar.org/wp-content/uploads/edd/2021/01/DSC_3775-scaled-e1611497359282-366x220.jpg" class="card-img-top" alt="Image 2">
+                    <img src="https://www.almudassar.org/wp-content/uploads/edd/2021/01/DSC_3775-scaled-e1611497359282-366x220.jpg"
+                        class="card-img-top" alt="Image 2">
                     <div class="card-body">
                         <h5 class="card-title">AL-MUDASSAR SCHOOL FOR BLIND</h5>
-                        <p class="card-text">Globally, it is estimated that approximately 1.3 billion people live with some form of vision.</p>
+                        <p class="card-text">Globally, it is estimated that approximately 1.3 billion people live with some
+                            form of vision.</p>
                     </div>
                 </div>
             </div>
@@ -109,10 +116,12 @@
             <!-- Column 3 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="https://www.almudassar.org/wp-content/uploads/edd/2021/01/IMG_8754-366x220.jpg" class="card-img-top" alt="Image 3">
+                    <img src="https://www.almudassar.org/wp-content/uploads/edd/2021/01/IMG_8754-366x220.jpg"
+                        class="card-img-top" alt="Image 3">
                     <div class="card-body">
                         <h5 class="card-title">AL-MUDASSAR LEARNING DISABILITY CENTRE</h5>
-                        <p class="card-text">£360 per year/ £180 per 6 months/ £30 per month: Sponsor a special child for one year.</p>
+                        <p class="card-text">£360 per year/ £180 per 6 months/ £30 per month: Sponsor a special child for
+                            one year.</p>
                     </div>
                 </div>
             </div>
@@ -120,7 +129,8 @@
             <!-- Column 4 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="https://www.almudassar.org/wp-content/uploads/edd/2021/01/14590333_1167252010016094_1413835466111869689_n-366x220.jpg" class="card-img-top" alt="Image 2">
+                    <img src="https://www.almudassar.org/wp-content/uploads/edd/2021/01/14590333_1167252010016094_1413835466111869689_n-366x220.jpg"
+                        class="card-img-top" alt="Image 2">
                     <div class="card-body">
                         <h5 class="card-title">AL-MUDASSAR VOCATIONAL TRAINING CENTRE</h5>
                         <p class="card-text">The Centre is seeking people to bring skills into its developing structure.</p>
@@ -131,10 +141,12 @@
             <!-- Column 5 START -->
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="https://www.almudassar.org/wp-content/uploads/edd/2021/01/WhatsApp-Image-2021-01-27-at-7.07.14-PM-366x220.jpeg" class="card-img-top" alt="Image 3">
+                    <img src="https://www.almudassar.org/wp-content/uploads/edd/2021/01/WhatsApp-Image-2021-01-27-at-7.07.14-PM-366x220.jpeg"
+                        class="card-img-top" alt="Image 3">
                     <div class="card-body">
                         <h5 class="card-title">AL-MUDASSAR REHABILITATION CENTRE</h5>
-                        <p class="card-text">We believe children with any disability can be a part of society and achieve milestone.</p>
+                        <p class="card-text">We believe children with any disability can be a part of society and achieve
+                            milestone.</p>
                     </div>
                 </div>
             </div>
@@ -148,14 +160,15 @@
             </div>
 
             <!-- Column 2 -->
-            <div class="col-md-4 text-center">
+            <div class="col-12 col-md-6 col-lg-4 text-center">
                 <div class="mb-4">
                     <!-- Heading -->
                     <div class="bg-secondary text-white p-2 rounded d-inline">SPONSOR THIS PROJECT</div>
-                    <h2 class="font-weight-bold text-warning mb-4">Empower Education, Support Our Mission</h2>
+                    <h2 class="font-weight-bold text-warning my-4">Empower Education, Support Our Mission</h2>
                     <!-- Text -->
                     <p class="text-white bg-secondary p-3 rounded">
-                        We empower thousands of children to receive a quality education. Now, we need your support to continue this vital mission.
+                        We empower thousands of children to receive a quality education. Now, we need your support to
+                        continue this vital mission.
                     </p>
                     <!-- Button -->
                     <a href="#" class="btn btn-success btn-lg">
@@ -180,7 +193,7 @@
             <div class="col-md-4 text-center">
                 <div>
                     <div class="bg-secondary p-2 rounded d-inline text-white">EVENTS AT AL-MUDASSAR</div>
-                    <h2 class="font-weight-bold mb-4">RECENT EVENTS AT AL-MUDASSAR</h2>
+                    <h2 class="font-weight-bold my-4">RECENT EVENTS AT AL-MUDASSAR</h2>
                 </div>
             </div>
 
@@ -192,16 +205,16 @@
 
         <div class="row p-3" style="background-color: blue">
             <video controls width="60%">
-                <source src="https://www.almudassar.org/wp-content/uploads/2024/08/Al-Mudassar-Trust-Report-BBC-Urdu-1.mp4?_=1" type="video/mp4">
+                <source
+                    src="https://www.almudassar.org/wp-content/uploads/2024/08/Al-Mudassar-Trust-Report-BBC-Urdu-1.mp4?_=1"
+                    type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <div class="row m-4">
-                <div class="col-md-3"></div>
-                <div class="col-md-6 align-items-center">
-                <div class="bg-secondary p-2 rounded d-inline text-white">EVENTS AT AL-MUDASSAR</div>
-                <h2 class="font-weight-bold text-white mb-4">RECENT EVENTS AT AL-MUDASSAR</h2>
+            <div class="row m-4 justify-content-center text-center">
+                <div class="col-12 col-md-8">
+                    <div class="bg-secondary p-2 rounded d-inline text-white">OUR TESTIMONIALS</div>
+                    <h2 class="font-weight-bold text-white my-4">WHAT OUR DONORS OVER THE WORLD ARE SAYING</h2>
                 </div>
-                <div class="col-md-3"></div>
             </div>
 
             <div class="row">
@@ -210,7 +223,8 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">John Doe</h5>
-                            <p class="card-text">"This service was absolutely fantastic! The team was professional, and the results exceeded my expectations."</p>
+                            <p class="card-text">"This service was absolutely fantastic! The team was professional, and the
+                                results exceeded my expectations."</p>
                         </div>
                     </div>
                 </div>
@@ -220,7 +234,8 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Jane Smith</h5>
-                            <p class="card-text">"Highly recommend! The attention to detail and customer service were top-notch. Will definitely work with them again."</p>
+                            <p class="card-text">"Highly recommend! The attention to detail and customer service were
+                                top-notch. Will definitely work with them again."</p>
                         </div>
                     </div>
                 </div>
@@ -230,8 +245,33 @@
                     <div class="card">
                         <div class="card-body">
                             <h2 class="card-title">Emily Johnson</h2>
-                            <p class="card-text">"An excellent experience from start to finish. The team's expertise and commitment were evident in every step."</p>
+                            <p class="card-text">"An excellent experience from start to finish. The team's expertise and
+                                commitment were evident in every step."</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center m-4">
+            <!-- Main Column -->
+            <div class="col-md-8">
+                <!-- Card -->
+                <div class="card bg-light text-center p-4">
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        <!-- Heading -->
+                        <div class="bg-secondary text-white p-2 rounded mb-4">DO GOOD</div>
+                        <h2 class="font-weight-bold text-primary mb-4">BECOME A VOLUNTEER</h2>
+                        <!-- Description -->
+                        <p class="text-dark" style="font-size: 18px;">
+                            We are looking in particular for experienced people who can work directly with children and
+                            families.
+                        </p>
+                        <!-- Button -->
+                        <a href="https://www.almudassar.org/volunteers/" class="btn btn-success btn-lg">
+                            JOIN US NOW
+                        </a>
                     </div>
                 </div>
             </div>
