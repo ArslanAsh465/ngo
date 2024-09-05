@@ -18,7 +18,8 @@
                 <div class="card mb-4">
                     <div class="card-body">
                         <h2 class="card-title text-center">Contact Form</h2>
-                        <form action="#" method="post">
+                        <form action="{{ route('contact_us.store') }}" method="post">
+                            @csrf
                             <div class="mb-3">
                                 <input type="text" class="form-control border rounded" placeholder="Name" name="your-name" required>
                             </div>
@@ -30,11 +31,6 @@
                             </div>
                             <div class="mb-3">
                                 <textarea class="form-control border rounded" rows="4" placeholder="Message" name="your-message"></textarea>
-                            </div>
-                            <div class="mb-3">
-                                <input type="text" class="form-control border rounded" placeholder="Captcha" name="captcha-897">
-                                <img class="mt-2" src="https://www.almudassar.org/wp-content/uploads/wpcf7_captcha/676603527.png"
-                                     alt="captcha">
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </form>

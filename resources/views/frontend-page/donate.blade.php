@@ -62,25 +62,6 @@
 
         <!-- Single Row for Amount Selection and Form -->
         <div class="row p-5">
-            <!-- Amount Selection Card -->
-            <div class="col-md-12 m-5">
-                <div class="card">
-                    <div class="card-header">
-                        Select Amount
-                    </div>
-                    <div class="card-body">
-                        <div class="d-flex flex-wrap gap-3 mb-4">
-                            <!-- Using btn-lg to make buttons larger -->
-                            <button type="button" class="btn btn-primary btn-lg" onclick="selectAmount(100)">$100</button>
-                            <button type="button" class="btn btn-primary btn-lg" onclick="selectAmount(250)">$250</button>
-                            <button type="button" class="btn btn-primary btn-lg" onclick="selectAmount(500)">$500</button>
-                            <button type="button" class="btn btn-primary btn-lg" onclick="selectAmount(1000)">$1000</button>
-                            <button type="button" class="btn btn-primary btn-lg" onclick="selectAmount(2500)">$2500</button>
-                            <input type="number" class="form-control form-control-lg" id="custom-amount" placeholder="Custom Amount" oninput="selectAmount(this.value)">
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <!-- Donation Form Card -->
             <div class="col-md-12 m-5">
@@ -89,45 +70,69 @@
                         Donation Form
                     </div>
                     <div class="card-body">
-                        <form id="donation-form" method="POST" action="#">
+                        <form id="donation-form" method="POST" action="{{ route('donate.store') }}">
                             @csrf
-                            <div class="form-group">
-                                <label for="first-name">First Name:</label>
-                                <input type="text" class="form-control" id="first-name" name="first-name" required>
+
+                            <!-- Amount Selection Section -->
+                            <div class="mb-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        Select Amount
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex flex-wrap gap-3 mb-4">
+                                            <!-- Using btn-lg to make buttons larger -->
+                                            <button type="button" class="btn btn-primary btn-lg" onclick="selectAmount(100)">$100</button>
+                                            <button type="button" class="btn btn-primary btn-lg" onclick="selectAmount(250)">$250</button>
+                                            <button type="button" class="btn btn-primary btn-lg" onclick="selectAmount(500)">$500</button>
+                                            <button type="button" class="btn btn-primary btn-lg" onclick="selectAmount(1000)">$1000</button>
+                                            <button type="button" class="btn btn-primary btn-lg" onclick="selectAmount(2500)">$2500</button>
+                                            <input type="text" class="form-control form-control-lg" id="amount" required>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="last-name">Last Name:</label>
-                                <input type="text" class="form-control" id="last-name" name="last-name" required>
+
+                            <!-- User Details Section -->
+                            <div class="mb-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        Your Details
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label for="first_name">First Name:</label>
+                                            <input type="text" class="form-control" id="first_name" name="first_name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="last_name">Last Name:</label>
+                                            <input type="text" class="form-control" id="last_name" name="last_name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email:</label>
+                                            <input type="email" class="form-control" id="email" name="email" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="phone">Phone Number:</label>
+                                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                                        </div>
+                                        <button type="submit" class="btn btn-success">Donate Now</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="email">Email:</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone Number:</label>
-                                <input type="tel" class="form-control" id="phone" name="phone">
-                            </div>
-                            <input type="hidden" id="donation-amount" name="donation-amount">
-                            <button type="submit" class="btn btn-success">Donate Now</button>
                         </form>
                     </div>
                 </div>
             </div>
+
         </div>
 
-
-        <!-- Inline JavaScript -->
-        <script>
-            // JavaScript to handle amount selection
-            function selectAmount(amount) {
-                document.getElementById('donation-amount').value = amount;
-            }
-
-            // Optional: Add form submission handling
-            document.getElementById('donation-form').addEventListener('submit', function(event) {
-                // Perform any additional validation or processing here
-            });
-        </script>
-
     </div>
+
+    <script>
+        function selectAmount(amount) {
+            var inputField = document.getElementById('amount');
+            inputField.value = amount;
+        }
+    </script>
 @endsection

@@ -7,6 +7,7 @@ use App\Http\Controllers\LocationController;
 use App\Http\Controllers\Admin\FrontendController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DonationController;
+use App\Http\Controllers\ContactController;
 
 
 Route::get('/arslan', function () {
@@ -16,7 +17,8 @@ Route::get('/arslan', function () {
 // Main Pages Routes
 Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/about-us', [HomeController::class, 'about_us'])->name('about_us');
-Route::get('/contact-us', [HomeController::class, 'contact_us'])->name('contact_us');
+Route::get('/contact-us', [ContactController::class, 'index'])->name('contact_us.index');
+Route::post('/contact-us', [ContactController::class, 'store'])->name('contact_us.store');
 Route::get('/gallery', [HomeController::class, 'gallery'])->name('gallery');
 Route::get('/education-services/school-for-deaf', [HomeController::class, 'school_for_deaf'])->name('school_for_deaf');
 Route::get('/education-services/school-for-blind', [HomeController::class, 'school_for_blind'])->name('school_for_blind');
@@ -27,7 +29,8 @@ Route::get('/education-services/barnala-branch', [HomeController::class, 'barnal
 Route::get('/get-inspired/future-projects', [HomeController::class, 'future_projects'])->name('future_projects');
 Route::get('/get-inspired/success-stories', [HomeController::class, 'success_stories'])->name('success_stories');
 Route::get('/get-inspired/become-a-volunteer', [HomeController::class, 'become_a_volunteer'])->name('become_a_volunteer');
-Route::get('/donate', [DonationController::class, 'index'])->name('donate');
+Route::get('/donate', [DonationController::class, 'index'])->name('donate.index');
+Route::post('/donate', [DonationController::class, 'store'])->name('donate.store');
 
 Route::get('/dashboard', function () {
     return view('admin.dashboard');

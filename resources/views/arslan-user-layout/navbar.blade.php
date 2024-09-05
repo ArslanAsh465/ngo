@@ -47,13 +47,13 @@
                                 <a class="nav-link text-dark" href="{{ route('about_us') }}"><strong>ABOUT US</strong></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="{{ route('contact_us') }}"><strong>CONTACT US</strong></a>
+                                <a class="nav-link text-dark" href="{{ route('contact_us.index') }}"><strong>CONTACT US</strong></a>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Donate Button -->
-                    <a class="btn btn-primary ms-3 d-none d-lg-inline-block" href="{{ route('donate') }}">Donate</a>
+                    <a class="btn btn-primary ms-3 d-none d-lg-inline-block" href="{{ route('donate.index') }}">Donate</a>
                 </div>
             </div>
         </div>
