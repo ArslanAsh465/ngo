@@ -11,7 +11,7 @@
             </div>
 
             <div class="d-inline-flex request-btn order-lg-last col-auto p-0 align-items-center">
-                <a class="nav-link btn btn-default ms-3 donate-btn" href="{{ route('donate.index') }}">Donate</a>
+                <a class="nav-link btn btn-default ms-3 donate-btn" href="{{ route('donate.index') }}">Donate Now</a>
                 <button class="navbar-toggler x collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>

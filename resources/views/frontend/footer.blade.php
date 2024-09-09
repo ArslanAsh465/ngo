@@ -28,10 +28,6 @@
                                 </a>
                             </div>
                         </li>
-                        <li>
-                            <div><i data-feather="clock"></i></div>
-                            <div>Mon-Fri / 9:00 AM - 19:00 PM</div>
-                        </li>
                     </ul>
                 </div>
 
@@ -39,9 +35,7 @@
                 <div class="social-icons">
                     <ul class="list-unstyled list-group list-group-horizontal">
                         <li><a href="#"><i class="icofont-facebook"></i></a></li>
-                        <li><a href="#"><i class="icofont-twitter"></i></a></li>
                         <li><a href="#"><i class="icofont-instagram"></i></a></li>
-                        <li><a href="#"><i class="icofont-behance"></i></a></li>
                         <li><a href="#"><i class="icofont-youtube-play"></i></a></li>
                     </ul>
                 </div>
@@ -93,10 +87,7 @@
         <div class="container pos-rel">
             <div class="row text-md-start text-center">
                 <div class="col-sm-12 col-md-auto copyright-text">
-                    © Copyright <span class="txt-blue">Gracious</span> <span id="yearText"></span>. | Created by <a href="https://themeforest.net/user/mannatstudio" rel="nofollow">MannatStudio</a>
-                </div>
-                <div class="col-sm-12 col-md-auto ms-md-auto text-md-end text-center copyright-links">
-                    <a href="#">Terms & Condition</a> | <a href="#">Privacy Policy</a> | <a href="#">Legal</a>
+                    Copyright © 2024 - <span class="txt-blue"><a href="{{ url('/') }}">Almudassar Trust</a></span> <span id="yearText"></span>. | Designed and Developed by <a href="https://www.kreashionsoftwarehouse.com/" rel="nofollow">Kreashion Software House</a>
                 </div>
             </div>
         </div>

@@ -9,11 +9,6 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DonationController;
 use App\Http\Controllers\ContactController;
 
-
-Route::get('/arslan', function () {
-    return view('arslan-user.home');
-});
-
 // Main Pages Routes
 Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/about-us', [HomeController::class, 'about_us'])->name('about_us');

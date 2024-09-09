@@ -12,16 +12,11 @@
                         <span class="_cf_email_" data-cfemail="1c75727a735c7b6e7d7f7573696f327f7371">[email&#160;protected]</span>
                     </a>
                 </div>
-                <div>
-                    <i data-feather="clock"></i> Mon-Fri / 9:00 AM - 19:00 PM
-                </div>
             </div>
             <div class="col-md-auto">
                 <div class="social-icons">
                     <a href="#"><i class="icofont-facebook"></i></a>
-                    <a href="#"><i class="icofont-twitter"></i></a>
                     <a href="#"><i class="icofont-instagram"></i></a>
-                    <a href="#"><i class="icofont-behance"></i></a>
                     <a href="#"><i class="icofont-youtube-play"></i></a>
                 </div>
             </div>

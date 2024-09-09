@@ -5,14 +5,20 @@
 @section('content')
     <div class="container py-5">
 
-        <div class="row bg-secondary rounded mb-5">
+        <div class="row rounded mb-5">
             <!-- Column 1 START -->
             <div class="col-md-4">
-                <div class="card bg-secondary border-0 text-white">
+                <div class="card border-0 text-white"
+                    style="background-color: rgb(67, 80, 97); transition: background-color 0.3s ease, transform 0.3s ease;"
+                    onmouseover="this.style.backgroundColor='rgb(87, 99, 121)'; this.style.transform='scale(1.05)';"
+                    onmouseout="this.style.backgroundColor='rgb(67, 80, 97)'; this.style.transform='scale(1)';">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-4 d-flex justify-content-center align-items-center">
-                                <i class="fa-solid fa-database fa-3x"></i>
+                                <i class="fa-solid fa-database fa-3x"
+                                    style="transition: color 0.3s ease, transform 0.3s ease;"
+                                    onmouseover="this.style.color='#ffd700'; this.style.transform='scale(1.1)';"
+                                    onmouseout="this.style.color='white'; this.style.transform='scale(1)';"></i>
                             </div>
                             <div class="col-md-8">
                                 <h5 class="card-title">GIVE DONATION</h5>
@@ -23,14 +29,19 @@
                     </div>
                 </div>
             </div>
-            <!-- Column 1 END -->
-            <!-- Column 2 START -->
+            <!-- Column 2 -->
             <div class="col-md-4">
-                <div class="card bg-secondary border-0 text-white">
+                <div class="card border-0 text-white"
+                    style="background-color: rgb(67, 80, 97); transition: background-color 0.3s ease, transform 0.3s ease;"
+                    onmouseover="this.style.backgroundColor='rgb(87, 99, 121)'; this.style.transform='scale(1.05)';"
+                    onmouseout="this.style.backgroundColor='rgb(67, 80, 97)'; this.style.transform='scale(1)';">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-4 d-flex justify-content-center align-items-center">
-                                <i class="fa-solid fa-face-laugh fa-3x"></i>
+                                <i class="fa-solid fa-face-laugh fa-3x"
+                                    style="transition: color 0.3s ease, transform 0.3s ease;"
+                                    onmouseover="this.style.color='#ffd700'; this.style.transform='scale(1.1)';"
+                                    onmouseout="this.style.color='white'; this.style.transform='scale(1)';"></i>
                             </div>
                             <div class="col-md-8">
                                 <h5 class="card-title">BECOME A VOLUNTEER</h5>
@@ -41,14 +52,19 @@
                     </div>
                 </div>
             </div>
-            <!-- Column 2 END -->
-            <!-- Column 3 START -->
+            <!-- Column 3 -->
             <div class="col-md-4">
-                <div class="card bg-secondary border-0 text-white">
+                <div class="card border-0 text-white"
+                    style="background-color: rgb(67, 80, 97); transition: background-color 0.3s ease, transform 0.3s ease;"
+                    onmouseover="this.style.backgroundColor='rgb(87, 99, 121)'; this.style.transform='scale(1.05)';"
+                    onmouseout="this.style.backgroundColor='rgb(67, 80, 97)'; this.style.transform='scale(1)';">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-4 d-flex justify-content-center align-items-center">
-                                <i class="fa-solid fa-apple-whole fa-3x"></i>
+                                <i class="fa-solid fa-apple-whole fa-3x"
+                                    style="transition: color 0.3s ease, transform 0.3s ease;"
+                                    onmouseover="this.style.color='#ffd700'; this.style.transform='scale(1.1)';"
+                                    onmouseout="this.style.color='white'; this.style.transform='scale(1)';"></i>
                             </div>
                             <div class="col-md-8">
                                 <h5 class="card-title">BECOME A SPONSOR</h5>
@@ -89,71 +105,98 @@
         <div class="row">
             <!-- Column 1 -->
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card position-relative">
                     <img src="https://www.almudassar.org/wp-content/uploads/edd/2021/01/DSC_7587-366x220.jpg"
                         class="card-img-top" alt="Image 1">
                     <div class="card-body">
                         <h5 class="card-title">AL-MUDASSAR SCHOOL FOR DEAF</h5>
-                        <p class="card-text">Less than 5% of 1 million Deaf children in Pakistan have access to education.
-                        </p>
+                        <p class="card-text">Less than 5% of 1 million Deaf children in Pakistan have access to education.</p>
+                        <button class="btn btn-primary position-absolute" style="bottom: 10px; right: 10px; display: none;">Donate</button>
                     </div>
                 </div>
             </div>
 
             <!-- Column 2 -->
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card position-relative">
                     <img src="https://www.almudassar.org/wp-content/uploads/edd/2021/01/DSC_3775-scaled-e1611497359282-366x220.jpg"
                         class="card-img-top" alt="Image 2">
                     <div class="card-body">
                         <h5 class="card-title">AL-MUDASSAR SCHOOL FOR BLIND</h5>
-                        <p class="card-text">Globally, it is estimated that approximately 1.3 billion people live with some
-                            form of vision.</p>
+                        <p class="card-text">Globally, it is estimated that approximately 1.3 billion people live with some form of vision.</p>
+                        <button class="btn btn-primary position-absolute" style="bottom: 10px; right: 10px; display: none;">Donate</button>
                     </div>
                 </div>
             </div>
 
             <!-- Column 3 -->
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card position-relative">
                     <img src="https://www.almudassar.org/wp-content/uploads/edd/2021/01/IMG_8754-366x220.jpg"
                         class="card-img-top" alt="Image 3">
                     <div class="card-body">
                         <h5 class="card-title">AL-MUDASSAR LEARNING DISABILITY CENTRE</h5>
-                        <p class="card-text">£360 per year/ £180 per 6 months/ £30 per month: Sponsor a special child for
-                            one year.</p>
+                        <p class="card-text">£360 per year/ £180 per 6 months/ £30 per month: Sponsor a special child for one year.</p>
+                        <button class="btn btn-primary position-absolute" style="bottom: 10px; right: 10px; display: none;">Donate</button>
                     </div>
                 </div>
             </div>
 
             <!-- Column 4 -->
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card position-relative">
                     <img src="https://www.almudassar.org/wp-content/uploads/edd/2021/01/14590333_1167252010016094_1413835466111869689_n-366x220.jpg"
                         class="card-img-top" alt="Image 2">
                     <div class="card-body">
                         <h5 class="card-title">AL-MUDASSAR VOCATIONAL TRAINING CENTRE</h5>
                         <p class="card-text">The Centre is seeking people to bring skills into its developing structure.</p>
+                        <button class="btn btn-primary position-absolute" style="bottom: 10px; right: 10px; display: none;">Donate</button>
                     </div>
                 </div>
             </div>
 
-            <!-- Column 5 START -->
+            <!-- Column 5 -->
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card position-relative">
                     <img src="https://www.almudassar.org/wp-content/uploads/edd/2021/01/WhatsApp-Image-2021-01-27-at-7.07.14-PM-366x220.jpeg"
                         class="card-img-top" alt="Image 3">
                     <div class="card-body">
                         <h5 class="card-title">AL-MUDASSAR REHABILITATION CENTRE</h5>
-                        <p class="card-text">We believe children with any disability can be a part of society and achieve
-                            milestone.</p>
+                        <p class="card-text">We believe children with any disability can be a part of society and achieve milestones.</p>
+                        <button class="btn btn-primary position-absolute" style="bottom: 10px; right: 10px; display: none;">Donate</button>
                     </div>
                 </div>
             </div>
-            <!-- Column 5 END -->
         </div>
 
-        <div class="row mt-4 mb-4 p-3 bg-light shadow-lg rounded">
+        <style>
+        .card {
+            transition: transform 0.3s ease;
+            overflow: hidden; /* Ensures content doesn't overflow the card */
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Scales up the card slightly */
+        }
+
+        .card:hover .btn {
+            display: block; /* Shows the button when the card is hovered */
+        }
+
+        .btn {
+            transition: opacity 0.3s ease; /* Smooth transition for button visibility */
+            opacity: 0; /* Starts hidden */
+        }
+
+        .card:hover .btn {
+            opacity: 1; /* Makes the button fully visible on hover */
+        }
+        </style>
+
+
+
+        <div class="row mt-4 mb-4 bg-light shadow-lg rounded p-5"
+            style="background-image: url('{{ asset('app-assets/frontend/assets/images/bg1.jpg') }}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <!-- Column 1 -->
             <div class="col-md-4">
                 <!-- Empty column for spacing or future content -->
@@ -185,12 +228,12 @@
 
         <div class="row mt-5 mb-4 p-3 bg-light shadow-lg rounded">
             <!-- Column 1 -->
-            <div class="col-md-4">
+            <div class="col-md-2">
                 <!-- Empty column for spacing or future content -->
             </div>
 
             <!-- Column 2 -->
-            <div class="col-md-4 text-center">
+            <div class="col-md-8 text-center">
                 <div>
                     <div class="bg-secondary p-2 rounded d-inline text-white">EVENTS AT AL-MUDASSAR</div>
                     <h2 class="font-weight-bold my-4">RECENT EVENTS AT AL-MUDASSAR</h2>
@@ -198,18 +241,20 @@
             </div>
 
             <!-- Column 3 -->
-            <div class="col-md-4">
+            <div class="col-md-2">
                 <!-- Empty column for spacing or future content -->
             </div>
         </div>
 
-        <div class="row p-3" style="background-color: blue">
-            <video controls width="60%">
-                <source
-                    src="https://www.almudassar.org/wp-content/uploads/2024/08/Al-Mudassar-Trust-Report-BBC-Urdu-1.mp4?_=1"
-                    type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+        <div class="row p-3" style="background-color: #0d3e69">
+            <div class="container d-flex justify-content-center align-items-center">
+                <video controls class="mx-auto" style="width: 60%;">
+                    <source
+                        src="https://www.almudassar.org/wp-content/uploads/2024/08/Al-Mudassar-Trust-Report-BBC-Urdu-1.mp4?_=1"
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
             <div class="row m-4 justify-content-center text-center">
                 <div class="col-12 col-md-8">
                     <div class="bg-secondary p-2 rounded d-inline text-white">OUR TESTIMONIALS</div>
@@ -222,21 +267,26 @@
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">John Doe</h5>
-                            <p class="card-text">"This service was absolutely fantastic! The team was professional, and the
-                                results exceeded my expectations."</p>
+                            <p class="card-text">"Very impressive, very well established institute for Special need
+                                children, very nice staff. I should thank Mr Mudassar for giving hope and an institute in a
+                                place where one cannot even think of having something for special need kids. May Allah bless
+                                you."</p>
                         </div>
+                        <h2 class="mt-2 text-center">Maimoona Abdul Ghaffar</h2>
                     </div>
+
                 </div>
 
                 <!-- Testimonial 2 -->
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Jane Smith</h5>
-                            <p class="card-text">"Highly recommend! The attention to detail and customer service were
-                                top-notch. Will definitely work with them again."</p>
+                            <p class="card-text">"I can’t live without appreciating the efforts of all staff of this
+                                institution. Special tribute to teachers of disable students. They are doing a wonderful job
+                                with passion and sincerity. Really very pleased to find such good and god fearing people.
+                                Thanks God Bless."</p>
                         </div>
+                        <h2 class="mt-2 text-center">SKB Rasool</h2>
                     </div>
                 </div>
 
@@ -244,20 +294,30 @@
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <div class="card-body">
-                            <h2 class="card-title">Emily Johnson</h2>
-                            <p class="card-text">"An excellent experience from start to finish. The team's expertise and
-                                commitment were evident in every step."</p>
+                            <p class="card-text">"Allah bless all people who they doing this great work. In the time of
+                                darkness, Almudassar is a ray of hope for special children. They are doing a great job in
+                                every field. These days you dont find honest and reliable people. Good to have you guys.
+                                Thanks."</p>
+                        </div>
+                        <h2 class="mt-2 text-center">Rani Sajjad</h2>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
-        <div class="row justify-content-center m-4">
+        <div class="row justify-content-center p-5" style="background-image: url('{{ asset('app-assets/frontend/assets/images/bg2.jpg') }}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <!-- Main Column -->
             <div class="col-md-8">
                 <!-- Card -->
-                <div class="card bg-light text-center p-4">
+                <div class="card bg-light text-center p-2">
                     <!-- Card Body -->
                     <div class="card-body">
                         <!-- Heading -->
@@ -276,6 +336,59 @@
                 </div>
             </div>
         </div>
+
+        <div class="row p-5">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="text-center py-3">
+                    <div class="bg-secondary text-white p-2 rounded d-inline m-3">
+                        HELP US TO HELP THEM
+                    </div>
+                    <h2 class="text-dark m-3 py-3">LATEST NEWS AT AL-MUDASSAR TRUST</h2>
+                </div>
+                <div id="carouselExampleControls" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card">
+                                <img src="{{ asset('app-assets/frontend/assets/images/card1.jpg') }}" class="card-img-top" alt="Image 1">
+                                <div class="card-body">
+                                    <button class="btn border border-secondary">READ MORE</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img src="{{ asset('app-assets/frontend/assets/images/card2.jpg') }}" class="card-img-top" alt="Image 2">
+                                <div class="card-body">
+                                    <p class="card-text">School reopens to all students on 1st February after a long break.</p>
+                                    <button class="btn border border-secondary">READ MORE</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img src="{{ asset('app-assets/frontend/assets/images/card3.jpg') }}" class="card-img-top" alt="Image 3">
+                                <div class="card-body">
+                                    <p class="card-text">Once again the students of Al-Mudassar have achieved outstanding results in their board exams. 100% pass mark across the classes.</p>
+                                    <button class="btn border border-secondary">READ MORE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+
 
     </div>
 @endsection
