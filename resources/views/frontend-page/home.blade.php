@@ -111,7 +111,7 @@
                     <div class="card-body">
                         <h5 class="card-title">AL-MUDASSAR SCHOOL FOR DEAF</h5>
                         <p class="card-text">Less than 5% of 1 million Deaf children in Pakistan have access to education.</p>
-                        <button class="btn btn-primary position-absolute" style="bottom: 10px; right: 10px; display: none;">Donate</button>
+                        <a class="btn btn-primary donate-button" href="{{ route('donate.index') }}">Donate</a>
                     </div>
                 </div>
             </div>
@@ -124,7 +124,7 @@
                     <div class="card-body">
                         <h5 class="card-title">AL-MUDASSAR SCHOOL FOR BLIND</h5>
                         <p class="card-text">Globally, it is estimated that approximately 1.3 billion people live with some form of vision.</p>
-                        <button class="btn btn-primary position-absolute" style="bottom: 10px; right: 10px; display: none;">Donate</button>
+                        <a class="btn btn-primary donate-button" href="{{ route('donate.index') }}">Donate</a>
                     </div>
                 </div>
             </div>
@@ -137,7 +137,7 @@
                     <div class="card-body">
                         <h5 class="card-title">AL-MUDASSAR LEARNING DISABILITY CENTRE</h5>
                         <p class="card-text">£360 per year/ £180 per 6 months/ £30 per month: Sponsor a special child for one year.</p>
-                        <button class="btn btn-primary position-absolute" style="bottom: 10px; right: 10px; display: none;">Donate</button>
+                        <a class="btn btn-primary donate-button" href="{{ route('donate.index') }}">Donate</a>
                     </div>
                 </div>
             </div>
@@ -150,7 +150,7 @@
                     <div class="card-body">
                         <h5 class="card-title">AL-MUDASSAR VOCATIONAL TRAINING CENTRE</h5>
                         <p class="card-text">The Centre is seeking people to bring skills into its developing structure.</p>
-                        <button class="btn btn-primary position-absolute" style="bottom: 10px; right: 10px; display: none;">Donate</button>
+                        <a class="btn btn-primary donate-button" href="{{ route('donate.index') }}">Donate</a>
                     </div>
                 </div>
             </div>
@@ -163,36 +163,41 @@
                     <div class="card-body">
                         <h5 class="card-title">AL-MUDASSAR REHABILITATION CENTRE</h5>
                         <p class="card-text">We believe children with any disability can be a part of society and achieve milestones.</p>
-                        <button class="btn btn-primary position-absolute" style="bottom: 10px; right: 10px; display: none;">Donate</button>
+                        <a class="btn btn-primary donate-button" href="{{ route('donate.index') }}">Donate</a>
                     </div>
                 </div>
             </div>
         </div>
 
         <style>
-        .card {
-            transition: transform 0.3s ease;
-            overflow: hidden; /* Ensures content doesn't overflow the card */
-        }
+            .card-img-top {
+                transition: filter 0.3s ease, opacity 0.3s ease;
+            }
 
-        .card:hover {
-            transform: scale(1.05); /* Scales up the card slightly */
-        }
+            .card {
+                position: relative;
+                overflow: hidden;
+            }
 
-        .card:hover .btn {
-            display: block; /* Shows the button when the card is hovered */
-        }
+            .card:hover .card-img-top {
+                filter: blur(5px); /* Adjust blur level as needed */
+                opacity: 0.6; /* Optional: adjust image transparency */
+            }
 
-        .btn {
-            transition: opacity 0.3s ease; /* Smooth transition for button visibility */
-            opacity: 0; /* Starts hidden */
-        }
+            .card:hover .donate-button {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: block;
+                z-index: 2; /* Ensure button is above the image */
+            }
 
-        .card:hover .btn {
-            opacity: 1; /* Makes the button fully visible on hover */
-        }
+            .donate-button {
+                display: none;
+            }
+
         </style>
-
 
 
         <div class="row mt-4 mb-4 bg-light shadow-lg rounded p-5"

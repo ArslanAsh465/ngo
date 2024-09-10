@@ -1,4 +1,5 @@
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="{{asset('app-assets/frontend/assets/library/jquery/jquery.min.js')}}"></script>
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="{{asset('app-assets/frontend/assets/library/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('app-assets/frontend/assets/library/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{asset('app-assets/frontend/assets/library/feather-icons/feather.min.js')}}"></script>
 <script src="{{asset('app-assets/frontend/assets/library/owlcarousel/js/owl.carousel.min.js')}}"></script>

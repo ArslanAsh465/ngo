@@ -30,7 +30,7 @@
 <body>
 
     <!-- Loader Component -->
-    @include('frontend.loader')
+    {{-- @include('frontend.loader') --}}
 
     <!-- Header Component -->
     @include('frontend.header')

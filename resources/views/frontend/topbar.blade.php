@@ -1,4 +1,4 @@
-<div class="top-bar-right d-flex align-items-center text-md-left">
+<div class="top-bar-right d-flex align-items-center text-md-left p-0 m-0" style="background-color: #F79C00">
     <div class="container">
         <div class="row align-items-center">
             <div class="col d-flex align-items-center contact-info">
