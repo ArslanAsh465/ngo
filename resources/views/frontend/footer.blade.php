@@ -14,17 +14,17 @@
                     <ul class="list-unstyled">
                         <li>
                             <div><i data-feather="map-pin"></i></div>
-                            <div>Envato Pty Ltd, 13/2 Elizabeth St Melbourne VIC 3000, Australia</div>
+                            <div>{{ $info_sections_f['address'] }}</div>
                         </li>
                         <li>
                             <div><i data-feather="phone"></i></div>
-                            <div><a href="tel:+1234567899">+1234567899</a></div>
+                            <div><a href="tel:+1234567899">{{ $info_sections_f['phone'] }}</a></div>
                         </li>
                         <li>
                             <div><i data-feather="mail"></i></div>
                             <div>
                                 <a href="https://mannatstudio.com/cdn-cgi/l/email-protection#0e676068614e66617e6b7c6f677d6b206d6163">
-                                    <span class="_cf_email_" data-cfemail="deb7b0b8b19eb6b1aebbacbfb7adbbf0bdb1b3">[email&#160;protected]</span>
+                                    <span class="_cf_email_" data-cfemail="deb7b0b8b19eb6b1aebbacbfb7adbbf0bdb1b3">{{ $info_sections_f['email'] }}</span>
                                 </a>
                             </div>
                         </li>
@@ -74,7 +74,7 @@
                         <div class="give-us-call">
                             <i data-feather="phone"></i>
                             <h4>Give us a call</h4>
-                            <h3><a href="tel:+1234567899">+1234567899</a></h3>
+                            <h3><a href="tel:">{{ $info_sections_f['phone'] }}</a></h3>
                         </div>
                     </div>
                 </div>

@@ -31,7 +31,6 @@ class DonationController extends Controller
      */
     public function store(Request $request)
     {
-        dd('here');
         $validated = $request->validate([
             'amount' => 'required|string|min:1',
             'first_name' => 'required|string|max:255',
@@ -39,8 +38,6 @@ class DonationController extends Controller
             'email' => 'required|email|max:255',
             'phone' => 'required|string|max:20',
         ]);
-
-        dd($validated);
 
         Donation::create([
             'amount' => $validated['amount'],

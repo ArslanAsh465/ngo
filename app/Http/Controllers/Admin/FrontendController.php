@@ -212,7 +212,8 @@ class FrontendController extends Controller
 
     public function frontend_settings_address()
     {
-        return view('admin.frontendSettings.address');
+        $info = InfoSection::first();
+        return view('admin.frontendSettings.address', compact('info'));
     }
 
     public function frontend_settings_address_save(Request $r)
@@ -227,7 +228,7 @@ class FrontendController extends Controller
         $new->phone = $r->phone;
         $new->address = $r->address;
         $new->save();
-       \Toastr::success('Successfully Saved','Success');
+    //    \Toastr::success('Successfully Saved','Success');
         return redirect()->back();
 
     }

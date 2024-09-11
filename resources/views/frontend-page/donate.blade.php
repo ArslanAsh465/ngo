@@ -87,7 +87,7 @@
                                             <button type="button" class="btn btn-primary btn-lg" onclick="selectAmount(500)">$500</button>
                                             <button type="button" class="btn btn-primary btn-lg" onclick="selectAmount(1000)">$1000</button>
                                             <button type="button" class="btn btn-primary btn-lg" onclick="selectAmount(2500)">$2500</button>
-                                            <input type="text" class="form-control form-control-lg" id="amount" required>
+                                            <input type="text" class="form-control form-control-lg" id="amount" name="amount" required>
                                         </div>
                                     </div>
                                 </div>
