@@ -77,6 +77,10 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/frontend/settings/insights', [FrontendController::class, 'frontend_settings_insights'])->name('admin.frontend_settings_insights');
     Route::post('/frontend/settings/insights/save', [FrontendController::class, 'frontend_settings_insights_save'])->name('admin.save.insights');
 
+    // Donation Routes
+    Route::get('/donations', [DonationController::class, 'adminIndex'])->name('admin.donation.index');
+    Route::post('/donations', [DonationController::class, 'adminUpdate'])->name('admin.donation.update');
+
 });
 
 require __DIR__.'/auth.php';

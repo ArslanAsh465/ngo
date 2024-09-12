@@ -81,4 +81,24 @@ class DonationController extends Controller
     {
         //
     }
+
+    public function adminIndex()
+    {
+        $donations = Donation::all();
+        return view('admin.donation.index', compact('donations'));
+    }
+
+    public function adminUpdate(Request $request)
+    {
+        $donationId = $request->input('donation_id');
+        $statusChecked = $request->has('status');
+
+        $donation = Donation::find($donationId);
+        if ($donation) {
+            $donation->status = $statusChecked;
+            $donation->save();
+        }
+
+        return redirect()->back()->with('success', 'Statuses updated successfully.');
+    }
 }

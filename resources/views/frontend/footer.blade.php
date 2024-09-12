@@ -25,10 +25,10 @@
             <h4 class="sd-footer-widget-title text-white p-2 rounded" style="background-color: #91A1B4"> Al-Mudassar Village, Baharwal Tehsil Kharian, District Gujrat, Pakistan </h4>
             <div class="py-3 text-white"><i data-feather="map-pin"></i>{{ $info_sections_f['address'] }}</div>
 
-            <div><i data-feather="phone"></i><a href="tel:+1234567899" class="text-white">{{ $info_sections_f['phone'] }}</a></div>
+            <div><i data-feather="phone"></i><a href="tel:{{ $info_sections_f->phone }}" class="text-white">{{ $info_sections_f['phone'] }}</a></div>
 
-            <div class="py-3"><i data-feather="mail"></i><a href="https://mannatstudio.com/cdn-cgi/l/email-protection#0e676068614e66617e6b7c6f677d6b206d6163">
-                <span class="_cf_email_ text-white" data-cfemail="deb7b0b8b19eb6b1aebbacbfb7adbbf0bdb1b3">{{ $info_sections_f['email'] }}</span>
+            <div class="py-3"><i data-feather="mail"></i><a href="mailto:{{ $info_sections_f->email }}" class="text-white">
+                <span class="text-white">{{ $info_sections_f->email }}</span>
             </a></div>
 
             <a href="#" class="text-white"><i class="icofont-facebook"></i></a>

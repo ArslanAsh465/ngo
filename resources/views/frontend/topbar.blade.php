@@ -4,12 +4,12 @@
             <div class="col d-flex align-items-center contact-info">
                 <div>
                     <i data-feather="phone"></i>
-                    <a href="tel:+1234567899">{{ $info_sections_f['phone'] }}</a>
+                    <a class="text-white" href="tel:{{ $info_sections_f->phone }}">{{ $info_sections_f['phone'] }}</a>
                 </div>
                 <div>
                     <i data-feather="mail"></i>
-                    <a href="https://mannatstudio.com/cdn-cgi/l/email-protection#472e29212807203526242e2832346924282a">
-                        <span class="_cf_email_" data-cfemail="1c75727a735c7b6e7d7f7573696f327f7371">{{ $info_sections_f['email'] }}</span>
+                    <a href="mailto:{{ $info_sections_f->email }}" class="text-white">
+                        <span class="text-white">{{ $info_sections_f->email }}</span>
                     </a>
                 </div>
             </div>

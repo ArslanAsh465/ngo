@@ -15,5 +15,6 @@ class Donation extends Model
         'last_name',
         'email',
         'phone',
+        'status',
     ];
 }
