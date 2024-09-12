@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Donation;
 use Illuminate\Http\Request;
 use App\Models\Bank;
+use App\Mail\DonationReceivedMail;
+use Illuminate\Support\Facades\Mail;
 
 class DonationController extends Controller
 {
@@ -31,23 +33,29 @@ class DonationController extends Controller
      */
     public function store(Request $request)
     {
-        $validated = $request->validate([
-            'amount' => 'required|string|min:1',
-            'first_name' => 'required|string|max:255',
-            'last_name' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'phone' => 'required|string|max:20',
-        ]);
+        try {
+            $validated = $request->validate([
+                'amount' => 'required|string|min:1',
+                'first_name' => 'required|string|max:255',
+                'last_name' => 'required|string|max:255',
+                'email' => 'required|email|max:255',
+                'phone' => 'required|string|max:20',
+            ]);
 
-        Donation::create([
-            'amount' => $validated['amount'],
-            'first_name' => $validated['first_name'],
-            'last_name' => $validated['last_name'],
-            'email' => $validated['email'],
-            'phone' => $validated['phone'],
-        ]);
+            $donation = Donation::create([
+                'amount' => $validated['amount'],
+                'first_name' => $validated['first_name'],
+                'last_name' => $validated['last_name'],
+                'email' => $validated['email'],
+                'phone' => $validated['phone'],
+            ]);
 
-        return redirect()->back();
+            Mail::to($donation['email'])->send(new DonationReceivedMail($donation));
+
+            return redirect()->back()->with('success', 'Donation recorded and email sent!');
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error', 'There was an issue processing your donation. Please try again.');
+        }
     }
 
     /**

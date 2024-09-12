@@ -3,6 +3,18 @@
 @section('title', 'Donate')
 
 @section('content')
+
+<!-- Display success or error messages -->
+@if (session('success'))
+<div class="alert alert-success">
+    {{ session('success') }}
+</div>
+@elseif (session('error'))
+<div class="alert alert-danger">
+    {{ session('error') }}
+</div>
+@endif
+
     <div class="container py-5">
         <h1 class="text-center mb-4">Donate</h1>
         <div class="row">
