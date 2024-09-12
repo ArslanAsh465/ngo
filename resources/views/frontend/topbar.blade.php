@@ -15,9 +15,9 @@
             </div>
             <div class="col-md-auto">
                 <div class="social-icons">
-                    <a href="#"><i class="icofont-facebook"></i></a>
-                    <a href="#"><i class="icofont-instagram"></i></a>
-                    <a href="#"><i class="icofont-youtube-play"></i></a>
+                    <a href="{{ $info_sections_f->facebook_link }}" class="text-white"><i class="icofont-facebook"></i></a>
+                    <a href="{{ $info_sections_f->linkedin_link }}" class="text-white mx-3"><i class="icofont-linkedin"></i></a>
+                    <a href="{{ $info_sections_f->youtube_link }}" class="text-white"><i class="icofont-youtube-play"></i></a>
                 </div>
             </div>
         </div>

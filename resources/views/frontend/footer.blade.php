@@ -22,8 +22,7 @@
     </div>
         </div>
         <div class="col-md-4">
-            <h4 class="sd-footer-widget-title text-white p-2 rounded" style="background-color: #91A1B4"> Al-Mudassar Village, Baharwal Tehsil Kharian, District Gujrat, Pakistan </h4>
-            <div class="py-3 text-white"><i data-feather="map-pin"></i>{{ $info_sections_f['address'] }}</div>
+            <h4 class="sd-footer-widget-title text-white p-2 rounded" style="background-color: #91A1B4"> {{ $info_sections_f['address'] }} </h4>
 
             <div><i data-feather="phone"></i><a href="tel:{{ $info_sections_f->phone }}" class="text-white">{{ $info_sections_f['phone'] }}</a></div>
 
@@ -31,9 +30,9 @@
                 <span class="text-white">{{ $info_sections_f->email }}</span>
             </a></div>
 
-            <a href="#" class="text-white"><i class="icofont-facebook"></i></a>
-            <a href="#" class="px-3 text-white"><i class="icofont-instagram"></i></a>
-            <a href="#" class="text-white"><i class="icofont-youtube-play"></i></a>
+            <a href="{{ $info_sections_f->facebook_link }}" class="text-white"><i class="icofont-facebook"></i></a>
+            <a href="{{ $info_sections_f->linkedin_link }}" class="px-3 text-white"><i class="icofont-linkedin"></i></a>
+            <a href="{{ $info_sections_f->youtube_link }}" class="text-white"><i class="icofont-youtube-play"></i></a>
 
         </div>
     </div>

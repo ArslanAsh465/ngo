@@ -30,7 +30,7 @@ return new class extends Migration
             $table->string('address')->nullable();
             $table->text('footer_about')->nullable();
             $table->string('facebook_link')->nullable();
-            $table->string('twitter_link')->nullable();
+            $table->string('youtube_link')->nullable();
             $table->string('linkedin_link')->nullable();
             $table->integer('events_participated')->nullable();
             $table->integer('classes_completed')->nullable();
