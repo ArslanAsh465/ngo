@@ -1,6 +1,6 @@
 @extends('frontend.main')
 
-@section('title', 'Learning Disability')
+@section('title', 'AL-MUDASSAR LEARNING DISABILITY CENTRE')
 
 @section('content')
     <div class="container py-5">

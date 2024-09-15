@@ -15,17 +15,19 @@ Route::get('/about-us', [HomeController::class, 'about_us'])->name('about_us');
 Route::get('/contact-us', [ContactController::class, 'index'])->name('contact_us.index');
 Route::post('/contact-us', [ContactController::class, 'store'])->name('contact_us.store');
 Route::get('/gallery', [HomeController::class, 'gallery'])->name('gallery');
-Route::get('/education-services/school-for-deaf', [HomeController::class, 'school_for_deaf'])->name('school_for_deaf');
-Route::get('/education-services/school-for-blind', [HomeController::class, 'school_for_blind'])->name('school_for_blind');
-Route::get('/education-services/learning-disability', [HomeController::class, 'learning_disability'])->name('learning_disability');
-Route::get('/education-services/vocational-training', [HomeController::class, 'vocational_training'])->name('vocational_training');
-Route::get('/education-services/rehabilitation', [HomeController::class, 'rehabilitation'])->name('rehabilitation');
-Route::get('/education-services/barnala-branch', [HomeController::class, 'barnala_branch'])->name('barnala_branch');
-Route::get('/get-inspired/future-projects', [HomeController::class, 'future_projects'])->name('future_projects');
-Route::get('/get-inspired/success-stories', [HomeController::class, 'success_stories'])->name('success_stories');
-Route::get('/get-inspired/become-a-volunteer', [HomeController::class, 'become_a_volunteer'])->name('become_a_volunteer');
-Route::get('/donate', [DonationController::class, 'index'])->name('donate.index');
-Route::post('/donate', [DonationController::class, 'store'])->name('donate.store');
+
+Route::get('/campaigns/school-for-deaf', [HomeController::class, 'school_for_deaf'])->name('school_for_deaf');
+Route::get('/campaigns/almudassar-school-for-blind', [HomeController::class, 'school_for_blind'])->name('school_for_blind');
+Route::get('/campaigns/disability-centre', [HomeController::class, 'learning_disability'])->name('learning_disability');
+Route::get('/campaigns/vocational-training-centre', [HomeController::class, 'vocational_training'])->name('vocational_training');
+Route::get('/campaigns/physical-training-centre', [HomeController::class, 'rehabilitation'])->name('rehabilitation');
+Route::get('/campaigns/al-mudassar-barnala-branch', [HomeController::class, 'barnala_branch'])->name('barnala_branch');
+
+Route::get('/causes-list', [HomeController::class, 'future_projects'])->name('future_projects');
+Route::get('/success-stories', [HomeController::class, 'success_stories'])->name('success_stories');
+Route::get('/volunteers', [HomeController::class, 'become_a_volunteer'])->name('become_a_volunteer');
+Route::get('/donation', [DonationController::class, 'index'])->name('donate.index');
+Route::post('/donation', [DonationController::class, 'store'])->name('donate.store');
 
 Route::get('/dashboard', function () {
     return view('admin.dashboard');

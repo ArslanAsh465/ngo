@@ -1,6 +1,6 @@
 @extends('frontend.main')
 
-@section('title', 'Future Projects')
+@section('title', 'FUTURE PROJECTS')
 
 @section('content')
     <div class="container py-5">

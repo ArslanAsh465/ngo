@@ -1,6 +1,6 @@
 @extends('frontend.main')
 
-@section('title', 'Donate')
+@section('title', 'Donation')
 
 @section('content')
 

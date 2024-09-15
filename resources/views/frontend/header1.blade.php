@@ -1,4 +1,4 @@
-<header class="header-style-fullwidth">
+<header class="header-style-fullwidth header-style-fullwidth-page">
 
     @include('frontend.topbar')
 
@@ -29,10 +29,10 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('home') }}">HOME</a>
+                            <a class="nav-link text-grey" href="{{ route('home') }}">HOME</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle-mob" href="#" id="dropdownEducation" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EDUCATION SERVICES</a>
+                            <a class="nav-link dropdown-toggle-mob text-grey" href="#" id="dropdownEducation" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EDUCATION SERVICES</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownEducation">
                                 <li><a class="dropdown-item" href="{{ route('school_for_deaf') }}">SCHOOL FOR DEAF</a></li>
                                 <li><a class="dropdown-item" href="{{ route('school_for_blind') }}">SCHOOL FOR BLIND</a></li>
@@ -43,7 +43,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle-mob" href="#" id="dropdownGetInspired" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GET INSPIRED</a>
+                            <a class="nav-link dropdown-toggle-mob text-grey" href="#" id="dropdownGetInspired" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GET INSPIRED</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownGetInspired">
                                 <li><a class="dropdown-item" href="{{ route('future_projects') }}">FUTURE PROJECTS</a></li>
                                 <li><a class="dropdown-item" href="{{ route('success_stories') }}">SUCCESS STORIES</a></li>
@@ -51,13 +51,13 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('gallery') }}">GALLERY</a>
+                            <a class="nav-link text-grey" href="{{ route('gallery') }}">GALLERY</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('about_us') }}">ABOUT US</a>
+                            <a class="nav-link text-grey" href="{{ route('about_us') }}">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('contact_us.index') }}">CONTACT US</a>
+                            <a class="nav-link text-grey" href="{{ route('contact_us.index') }}">CONTACT US</a>
                         </li>
                     </ul>
                 </div>

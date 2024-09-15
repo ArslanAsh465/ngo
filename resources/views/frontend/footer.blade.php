@@ -1,4 +1,4 @@
-<div class="" style="background-color: #F79C00">
+<div style="background-color: #F79C00">
     <div class="row p-5">
         <div class="col-md-4">
             <h4 class="sd-footer-widget-title text-white"><span class="p-2 rounded" style="background-color: #91A1B4"> About Al-Mudassar Trust </span></h4>
@@ -53,3 +53,9 @@
 <a id="mkdf-back-to-top" href="#" class="off"><i data-feather="corner-right-up"></i></a>
 
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="XYZ"></script>
+
+<style>
+body, .container {
+    overflow-x: hidden;
+}
+</style>
