@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\FrontendController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DonationController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\NewsController;
 
 // Main Pages Routes
 Route::get('/', [HomeController::class, 'home'])->name('home');
@@ -82,6 +83,15 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     // Donation Routes
     Route::get('/donations', [DonationController::class, 'adminIndex'])->name('admin.donation.index');
     Route::post('/donations', [DonationController::class, 'adminUpdate'])->name('admin.donation.update');
+
+    // News Routes
+    Route::get('news', [NewsController::class, 'index'])->name('admin.news.index');
+    Route::get('news/create', [NewsController::class, 'create'])->name('admin.news.create');
+    Route::post('news', [NewsController::class, 'store'])->name('admin.news.store');
+    Route::get('news/{news}', [NewsController::class, 'show'])->name('admin.news.show');
+    Route::get('news/{news}/edit', [NewsController::class, 'edit'])->name('admin.news.edit');
+    Route::put('news/{news}', [NewsController::class, 'update'])->name('admin.news.update');
+    Route::delete('news/{news}', [NewsController::class, 'destroy'])->name('admin.news.destroy');
 
 });
 
