@@ -112,7 +112,7 @@
                         <h5 class="card-title">AL-MUDASSAR SCHOOL FOR DEAF</h5>
                         <p class="card-text">Less than 5% of 1 million Deaf children in Pakistan have access to education.
                         </p>
-                        <a class="btn btn-primary donate-button" href="{{ route('donate.index') }}">Donate</a>
+                        <a class="btn btn-default donate-button" href="{{ route('donate.index') }}">Donate</a>
                     </div>
                 </div>
             </div>
@@ -126,7 +126,7 @@
                         <h5 class="card-title">AL-MUDASSAR SCHOOL FOR BLIND</h5>
                         <p class="card-text">Globally, it is estimated that approximately 1.3 billion people live with some
                             form of vision.</p>
-                        <a class="btn btn-primary donate-button" href="{{ route('donate.index') }}">Donate</a>
+                        <a class="btn btn-default donate-button" href="{{ route('donate.index') }}">Donate</a>
                     </div>
                 </div>
             </div>
@@ -140,7 +140,7 @@
                         <h5 class="card-title">AL-MUDASSAR LEARNING DISABILITY CENTRE</h5>
                         <p class="card-text">£360 per year/ £180 per 6 months/ £30 per month: Sponsor a special child for
                             one year.</p>
-                        <a class="btn btn-primary donate-button" href="{{ route('donate.index') }}">Donate</a>
+                        <a class="btn btn-default donate-button" href="{{ route('donate.index') }}">Donate</a>
                     </div>
                 </div>
             </div>
@@ -154,7 +154,7 @@
                         <h5 class="card-title">AL-MUDASSAR VOCATIONAL TRAINING CENTRE</h5>
                         <p class="card-text">The Centre is seeking people to bring skills into its developing structure.
                         </p>
-                        <a class="btn btn-primary donate-button" href="{{ route('donate.index') }}">Donate</a>
+                        <a class="btn btn-default donate-button" href="{{ route('donate.index') }}">Donate</a>
                     </div>
                 </div>
             </div>
@@ -168,7 +168,7 @@
                         <h5 class="card-title">AL-MUDASSAR REHABILITATION CENTRE</h5>
                         <p class="card-text">We believe children with any disability can be a part of society and achieve
                             milestones.</p>
-                        <a class="btn btn-primary donate-button" href="{{ route('donate.index') }}">Donate</a>
+                        <a class="btn btn-default donate-button" href="{{ route('donate.index') }}">Donate</a>
                     </div>
                 </div>
             </div>
@@ -227,7 +227,7 @@
                         continue this vital mission.
                     </p>
                     <!-- Button -->
-                    <a href="{{ route('donate.index') }}" class="btn btn-success btn-lg">
+                    <a href="{{ route('donate.index') }}" class="btn btn-default btn-lg">
                         DONATE NOW
                     </a>
                 </div>
@@ -344,7 +344,7 @@
                             families.
                         </p>
                         <!-- Button -->
-                        <a href="https://www.almudassar.org/volunteers/" class="btn btn-success btn-lg">
+                        <a href="{{ route('become_a_volunteer') }}" class="btn btn-default btn-lg">
                             JOIN US NOW
                         </a>
                     </div>
@@ -369,7 +369,7 @@
                                 <img src="{{ asset('app-assets/frontend/assets/images/card1.jpg') }}" class="card-img-top"
                                     alt="Image 1">
                                 <div class="card-body">
-                                    <a href="https://www.almudassar.org/2021/01/30/school-reopens-to-all-students/#more-2140" class="btn border border-secondary">READ MORE</a>
+                                    <a href="https://www.almudassar.org/2021/01/30/school-reopens-to-all-students/#more-2140" class="btn btn-default">READ MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -380,7 +380,7 @@
                                 <div class="card-body">
                                     <p class="card-text">School reopens to all students on 1st February after a long break.
                                     </p>
-                                    <a href="https://www.almudassar.org/2021/01/28/run-it-forward-official-charity/#more-229" class="btn border border-secondary">READ MORE</a>
+                                    <a href="https://www.almudassar.org/2021/01/28/run-it-forward-official-charity/#more-229" class="btn btn-default">READ MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -391,7 +391,7 @@
                                 <div class="card-body">
                                     <p class="card-text">Once again the students of Al-Mudassar have achieved outstanding
                                         results in their board exams. 100% pass mark across the classes.</p>
-                                    <a href="https://www.almudassar.org/2021/01/31/muslimgiving-raising-donations-for-al-mudassar-trust/#more-2142" class="btn border border-secondary">READ MORE</a>
+                                    <a href="https://www.almudassar.org/2021/01/31/muslimgiving-raising-donations-for-al-mudassar-trust/#more-2142" class="btn btn-default">READ MORE</a>
                                 </div>
                             </div>
                         </div>

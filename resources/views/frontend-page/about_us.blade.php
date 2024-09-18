@@ -294,14 +294,12 @@
             </div>
             <!-- Buttons (3 columns each) -->
             <div class="col-md-3">
-                <a href="#" class="btn btn-success btn-block text-white"
-                    style="background-color: #29af8a; border-color: #29af8a; font-family: 'Montserrat'; font-weight: bold;">
+                <a href="{{ route('donate.index') }}" class="btn btn-default btn-block">
                     DONATE NOW
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="{{ route('become_a_volunteer') }}" class="btn btn-outline-success btn-block"
-                    style="border-color: #29af8a; color: #435061; font-family: 'Montserrat'; font-weight: bold;">
+                <a href="{{ route('become_a_volunteer') }}" class="btn btn-outline-default">
                     BECOME A VOLUNTEER
                 </a>
             </div>

@@ -72,7 +72,7 @@
                         <h6 class="font-weight-bold">Choose an amount to donate <span class="text-danger">*</span></h6>
                         <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
                             @foreach ([100, 250, 500, 1000, 2500] as $amount)
-                                <button type="button" class="btn btn-primary btn-lg" onclick="selectAmount({{ $amount }})">${{ $amount }}</button>
+                                <button type="button" class="btn btn-default btn-lg" onclick="selectAmount({{ $amount }})">${{ $amount }}</button>
                             @endforeach
                             <input type="text" class="form-control form-control-lg" id="amount" name="amount" required placeholder="Enter amount">
                         </div>
@@ -115,7 +115,7 @@
                                 <label for="comment">Comment</label>
                                 <textarea class="form-control" id="comment" name="comment" rows="4" placeholder="Add your comment here..."></textarea>
                             </div>
-                            <button type="submit" class="btn btn-success mt-3">Donate Now</button>
+                            <button type="submit" class="btn btn-default mt-3">Donate Now</button>
                         </div>
                     </form>
                 </div>
