@@ -50,7 +50,7 @@
                     </div>
                 </div>
 
-                <div class="row bg-success mb-4">
+                <div class="row bg-secondary mb-4">
                     <div class="col-md-8">
                         <div class="p-3 text-white rounded">
                             <h3 class="font-weight-normal">Al-Mudassar Trust provides free education and boarding facilities for children with special needs. Please support this noble cause with your Zakah and Sadaqah donations.</h3>
