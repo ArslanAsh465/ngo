@@ -16,5 +16,7 @@ class Donation extends Model
         'email',
         'phone',
         'status',
+        'anonymous',
+        'comment'
     ];
 }

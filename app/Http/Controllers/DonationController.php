@@ -40,6 +40,8 @@ class DonationController extends Controller
                 'last_name' => 'required|string|max:255',
                 'email' => 'required|email|max:255',
                 'phone' => 'required|string|max:20',
+                'anonymous' => 'nullable|boolean',
+                'comment' => 'nullable|string|max:500',
             ]);
 
             $donation = Donation::create([
@@ -48,13 +50,15 @@ class DonationController extends Controller
                 'last_name' => $validated['last_name'],
                 'email' => $validated['email'],
                 'phone' => $validated['phone'],
+                'anonymous' => $validated['anonymous'] ?? false,
+                'comment' => $validated['comment'] ?? null,
             ]);
 
             Mail::to($donation['email'])->send(new DonationReceivedMail($donation));
 
-            return redirect()->back()->with('success', 'Donation recorded and email sent!');
+            return redirect()->back();
         } catch (\Exception $e) {
-            return redirect()->back()->with('error', 'There was an issue processing your donation. Please try again.');
+            return redirect()->back();
         }
     }
 

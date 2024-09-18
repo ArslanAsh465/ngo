@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('email');
             $table->string('phone');
             $table->boolean('status')->default(false);
+            $table->text('comment')->nullable();
+            $table->boolean('anonymous')->default(false);
             $table->timestamps();
         });
     }
