@@ -1,6 +1,6 @@
 @extends('frontend.main')
 
-@section('title', 'VOLUNTEERS')
+@section('title', 'Become a Volunteer')
 
 @section('content')
 <div class="container py-5">
@@ -113,7 +113,12 @@
                     <label for="MSG">MESSAGE</label>
                     <textarea class="form-control border" id="MSG" name="MSG" rows="4" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-default">Send Inquiry</button>
+                <div class="form-group mb-3">
+                    <label for="captcha-207">CAPTCHA</label>
+                    <input type="text" class="form-control border" id="captcha-207" name="captcha-207" placeholder="Write Code">
+                    <img class="mt-2" src="https://www.almudassar.org/wp-content/uploads/wpcf7_captcha/143762710.png" alt="captcha">
+                </div>
+                <button type="submit" class="btn btn-primary">Send Inquiry</button>
             </form>
         </div>
     </div>

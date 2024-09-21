@@ -29,7 +29,7 @@
 
             <!-- Page Content -->
             <main>
-                <div>{{ Auth::check() ? $slot : '' }}</div>
+                {{ $slot }}
             </main>
         </div>
     </body>

@@ -1,6 +1,6 @@
 @extends('frontend.main')
 
-@section('title', 'ABOUT US')
+@section('title', 'About Us')
 
 @section('content')
     <div class="container py-5">
@@ -11,7 +11,7 @@
             <div class="col-md-6">
                 <h1 class="badge bg-secondary text-light p-3 d-inline-block mb-4">WHO WE ARE</h1>
                 <h3 class="font-weight-bold">WE ARE AL-MUDASSAR TRUST</h3>
-                <p style="color: #29af8a;">
+                <p style="color: #d59b2d;">
                     Al-Mudassar Trust was founded as a social welfare organization to cater to the ever-growing needs
                     of children with special needs living in ‘rural’ areas of Pakistan. It provides totally free education
                     and health services to children with special needs living in and around Tehsil Kharian, Pakistan.
@@ -103,7 +103,7 @@
             <div class="col-md-4">
                 <div class="card border-0 shadow-sm position-relative p-3">
                     <div class="d-flex align-items-start mb-3">
-                        <i class="fas fa-heart fa-3x" style="color:#29af8a; font-size: 36px;"></i>
+                        <i class="fas fa-heart fa-3x" style="color:#d59b2d; font-size: 36px;"></i>
                     </div>
                     <div class="mb-3">
                         <h3 class="card-title" style="font-family:'Montserrat'; font-weight: 700;">VISION</h3>
@@ -120,7 +120,7 @@
             <div class="col-md-4">
                 <div class="card border-0 shadow-sm position-relative p-3">
                     <div class="d-flex align-items-start mb-3">
-                        <i class="fas fa-star fa-3x" style="color:#29af8a; font-size: 36px;"></i>
+                        <i class="fas fa-star fa-3x" style="color:#d59b2d; font-size: 36px;"></i>
                     </div>
                     <div class="mb-3">
                         <h3 class="card-title" style="font-family:'Montserrat'; font-weight: 700;">MISSION</h3>
@@ -137,7 +137,7 @@
             <div class="col-md-4">
                 <div class="card border-0 shadow-sm position-relative p-3">
                     <div class="d-flex align-items-start mb-3">
-                        <i class="fas fa-thumbs-up fa-3x" style="color:#29af8a; font-size: 36px;"></i>
+                        <i class="fas fa-thumbs-up fa-3x" style="color:#d59b2d; font-size: 36px;"></i>
                     </div>
                     <div class="mb-3">
                         <h3 class="card-title" style="font-family:'Montserrat'; font-weight: 700;">OUR VALUES</h3>
@@ -185,7 +185,7 @@
         <div class="row mt-5">
             <!-- Chairman Profile Card (3 columns) -->
             <div class="col-md-3 mt-5">
-                <div class="card border-0" style="background-color: #29af8a;">
+                <div class="card border-0" style="background-color: #d59b2d;">
                     <img src="https://www.almudassar.org/wp-content/uploads/2015/07/DSC_0324-2-366x350.jpg"
                         class="card-img-top img-fluid" alt="Syed Mudassar Shah">
                     <div class="card-body text-center">
@@ -202,26 +202,26 @@
             <!-- Chairman's Message (9 columns) -->
             <div class="col-md-9">
                 <h3 class="font-weight-bold mb-4">Message of Chairman</h3>
-                <p class="text-justify text-success">
+                <p class="text-justify" style="color:#d59b2d">
                     “Having spent my childhood watching my blind siblings struggle with the smallest things in life and
                     the challenges that my parents faced in Pakistan. I pledged to myself and the Almighty, that should he
                     bestow me with sustenance, I would create something unique for the special children of Pakistan.
                     What you see today is a result of that pledge.”
                 </p>
-                <p class="text-justify text-success">
+                <p class="text-justify" style="color:#d59b2d">
                     I have dedicated over 20 years of my life to this cause and have invested huge amounts of money to
                     realise this dream. The complex is a lifeline to over 450 children who without Al Mudassar would be
                     on the streets and treated as insignificant beings. The journey has been long and very exhausting both
                     physically and mentally, but when I see the students of Al Mudassar achieve 100% results year on year I
                     feel that my efforts have not been in vain.
                 </p>
-                <p class="text-justify text-success">
+                <p class="text-justify" style="color:#d59b2d">
                     When I hear of children with learning disabilities being abused or shunned or children with physical
                     disabilities left on the bed all day, I feel that this is only the beginning and we have so much yet
                     to do. Changing the mindset of the people through education is my next step through Al-Mudassar
                     University for Special Education.
                 </p>
-                <p class="text-justify text-success">
+                <p class="text-justify" style="color:#d59b2d">
                     As you can see that this is a giant of a project for one person and I now invite you all to become a
                     part of the Al Mudassar family by supporting us through your donations, time and prayers”.
                 </p>
@@ -232,7 +232,7 @@
         <div class="row mt-5">
             <!-- Executive Director Profile Card (3 columns) -->
             <div class="col-md-3 mt-5">
-                <div class="card border-0" style="background-color: #29af8a;">
+                <div class="card border-0" style="background-color: #d59b2d;">
                     <img width="366" height="350"
                         src="https://www.almudassar.org/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-15-at-5.01.58-PM-e1721054312427-366x350.jpeg"
                         class="card-img-top img-fluid" alt="Qamar Bashir">
@@ -250,7 +250,7 @@
             <!-- Executive Director's Bio (9 columns) -->
             <div class="col-md-9">
                 <h3 class="font-weight-bold mb-4">Meet Our Executive Director</h3>
-                <p class="text-justify text-success">
+                <p class="text-justify" style="color:#d59b2d">
                     Qamar Bashir brings a wealth of experience and a passion for service to his role as Executive Director
                     of Al-Mudassar Trust. With a distinguished career spanning multiple high-impact roles, Mr. Bashir has
                     dedicated his expertise to enhancing the lives of those in need. He served as the Press Secretary to the
@@ -260,24 +260,24 @@
                     leadership extended to the FM Radio network, revitalizing its operations across major cities in
                     Pakistan.
                 </p>
-                <p class="text-justify text-success">
+                <p class="text-justify" style="color:#d59b2d">
                     Mr. Bashir’s international experience includes serving as the Press Minister at the Embassy of Pakistan
                     in France, where he cultivated relationships with French media and promoted Pakistan’s narrative on the
                     global stage. Additionally, as Press Attaché at the High Commission of Pakistan in Malaysia, he
                     facilitated media engagement for visiting dignitaries and managed public diplomacy initiatives.
                 </p>
-                <p class="text-justify text-success">
+                <p class="text-justify" style="color:#d59b2d">
                     With his wealth of experience, he is now assisting the Chairman of Al-Mudassar Trust to further improve
                     and expand the Trust’s state-of-the-art facilities, providing free, quality education and vocational
                     training to over 500 physically and mentally challenged, visually impaired, and hearing-impaired
                     children.
                 </p>
-                <p class="text-justify text-success">
+                <p class="text-justify" style="color:#d59b2d">
                     His innovative ideas and extensive experience are a great source of strength to the Trust in pursuing
                     the establishment of a full-fledged university, a teaching hospital, and an institute for the blind, as
                     well as the creation of independent businesses staffed by graduates of the Trust.
                 </p>
-                <p class="text-justify text-success">
+                <p class="text-justify" style="color:#d59b2d">
                     A tireless advocate for inclusivity and empowerment, Mr. Bashir’s commitment to optimizing our digital
                     presence and forming strategic partnerships has been instrumental in advancing our mission to offer
                     dignified and independent lives to our students.
@@ -294,12 +294,14 @@
             </div>
             <!-- Buttons (3 columns each) -->
             <div class="col-md-3">
-                <a href="{{ route('donate.index') }}" class="btn btn-default btn-block">
+                <a href="#" class="btn btn-success btn-block text-white"
+                    style="background-color: #d59b2d; border-color: #d59b2d; font-family: 'Montserrat'; font-weight: bold;">
                     DONATE NOW
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="{{ route('become_a_volunteer') }}" class="btn btn-outline-default">
+                <a href="{{ route('become_a_volunteer') }}" class="btn btn-outline-success btn-block"
+                    style="border-color: #d59b2d; color: #435061; font-family: 'Montserrat'; font-weight: bold;">
                     BECOME A VOLUNTEER
                 </a>
             </div>

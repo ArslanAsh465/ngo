@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\Location;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -12,7 +13,8 @@ class ContactController extends Controller
      */
     public function index()
     {
-        return view('frontend-page.contact_us');
+        $locations = Location::with('banks')->get();
+        return view('frontend-page.contact_us', compact('locations'));
     }
 
     /**

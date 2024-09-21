@@ -1,6 +1,6 @@
 @extends('frontend.main')
 
-@section('title', 'FUTURE PROJECTS')
+@section('title', 'Future Projects')
 
 @section('content')
     <div class="container py-5">
@@ -54,7 +54,7 @@
                 </h3>
             </div>
             <div class="col-md-4">
-                <a href="{{ route('donate.index') }}" class="btn btn-default btn-lg" role="button">
+                <a href="https://www.almudassar.org/donate/" class="btn btn-success btn-lg" role="button">
                     DONATE NOW
                 </a>
             </div>

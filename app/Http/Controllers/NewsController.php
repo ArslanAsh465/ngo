@@ -31,7 +31,8 @@ class NewsController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'description' => 'required|string|max:255',
+            'title' => 'required|string',
+            'description' => 'required|string',
             'image' => 'required|image|mimes:jpg,jpeg,png,gif|max:2048',
         ]);
 
@@ -41,10 +42,14 @@ class NewsController extends Controller
             $imagePath = $image->store('news', 'public');
         }
 
-        News::create([
+        $news = News::create([
             'description' => $validated['description'],
             'image' => $imagePath,
+            'title' => $validated['title'],
         ]);
+
+        $news->slug = \Str::slug($validated['title']);
+        $news->save();
 
         return redirect()->route('admin.news.index')->with('success', 'News item created successfully.');
     }
@@ -71,7 +76,8 @@ class NewsController extends Controller
     public function update(Request $request, News $news)
     {
         $validated = $request->validate([
-            'description' => 'required|string|max:255',
+            'description' => 'required|string',
+            'title' => 'required|string',
             'image' => 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048',
         ]);
 
@@ -88,7 +94,12 @@ class NewsController extends Controller
         $news->update([
             'description' => $validated['description'],
             'image' => $imagePath,
+            'title' => $validated['title'],
         ]);
+
+        $news->slug = \Str::slug($validated['title']);
+        $news->save();
+
 
         return redirect()->route('admin.news.index')->with('success', 'News item updated successfully.');
     }

@@ -15,7 +15,7 @@
                         <h4>Footer Section Settings</h4>
                         <hr>
                         <div class="col-md-12">
-                            <form method="post" action="{{ route('admin.save.footer') }}" enctype="multipart/form-data">
+                            <form method="post" action="{{route('admin.save.footer')}}" enctype="multipart/form-data">
                                 @csrf
 
                                 <div class="form-group mb-3">
@@ -29,12 +29,12 @@
                                 </div>
 
                                 <div class="form-group mb-3">
-                                    <label for="youtube_link">YouTube Link</label>
-                                    <input type="url" id="youtube_link" name="youtube_link" class="form-control" value="{{ $info->youtube_link ?? '' }}">
+                                    <label for="twitter_link">Twitter Link</label>
+                                    <input type="url" id="twitter_link" name="twitter_link" class="form-control" value="{{ $info->twitter_link ?? '' }}">
                                 </div>
 
                                 <div class="form-group mb-3">
-                                    <label for="linkedin_link">LinkedIn Link</label>
+                                    <label for="linkedin_link">Linkedin Link</label>
                                     <input type="url" id="linkedin_link" name="linkedin_link" class="form-control" value="{{ $info->linkedin_link ?? '' }}">
                                 </div>
 

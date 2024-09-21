@@ -21,6 +21,12 @@ class FrontendController extends Controller
 
     public function frontend_settings_homepage_slider_save(Request $r)
     {
+        // if($r->has('id')){
+        //     $new = HomepageSlider::where('id',$r->id)->first();
+        // }else{
+        //     $new = new HomepageSlider();
+        // }
+
         $new = new HomepageSlider();
 
         $new->heading = $r->heading;
@@ -36,6 +42,7 @@ class FrontendController extends Controller
             $new->image = $file;
         }
         $new->save();
+    //    \Toastr::success('Successfully Saved','Success');
         $r->session()->flash('success', 'Successfully Saved');
         return redirect()->back();
     }
@@ -205,110 +212,73 @@ class FrontendController extends Controller
 
     public function frontend_settings_address()
     {
-        $info = InfoSection::first();
-        return view('admin.frontendSettings.address', compact('info'));
+        return view('admin.frontendSettings.address');
     }
 
     public function frontend_settings_address_save(Request $r)
     {
-        try {
-            $infoSection = InfoSection::first();
-            if (empty($infoSection)) {
-                $infoSection = new InfoSection();
-            }
 
-            if ($r->filled('email')) {
-                $infoSection->email = $r->email;
-            }
-            if ($r->filled('phone')) {
-                $infoSection->phone = $r->phone;
-            }
-            if ($r->filled('address')) {
-                $infoSection->address = $r->address;
-            }
-
-            $infoSection->save();
-
-            $r->session()->flash('success', 'Address settings updated successfully.');
-        } catch (\Exception $e) {
-            $r->session()->flash('error', 'There was an error updating the address settings.');
+        $new = InfoSection::first();
+        if(empty($new)){
+            $new = new InfoSection();
         }
 
+        $new->email = $r->email;
+        $new->phone = $r->phone;
+        $new->address = $r->address;
+        $new->save();
+       \Toastr::success('Successfully Saved','Success');
         return redirect()->back();
+
     }
 
-    public function frontend_settings_footer()
+
+
+  public function frontend_settings_footer()
     {
-        $info = InfoSection::first();
-        return view('admin.frontendSettings.footer', compact('info'));
+        return view('admin.frontendSettings.footer');
     }
 
     public function frontend_settings_footer_save(Request $r)
     {
-        try {
-            $infoSection = InfoSection::first();
-            if (empty($infoSection)) {
-                $infoSection = new InfoSection();
-            }
 
-            if ($r->has('footer_about')) {
-                $infoSection->footer_about = $r->footer_about;
-            }
-            if ($r->has('facebook_link')) {
-                $infoSection->facebook_link = $r->facebook_link;
-            }
-            if ($r->has('youtube_link')) {
-                $infoSection->youtube_link = $r->youtube_link;
-            }
-            if ($r->has('linkedin_link')) {
-                $infoSection->linkedin_link = $r->linkedin_link;
-            }
-
-            $infoSection->save();
-
-            $r->session()->flash('success', 'Footer settings updated successfully.');
-        } catch (\Exception $e) {
-            $r->session()->flash('error', 'There was an error updating the footer settings.');
+        $new = InfoSection::first();
+        if(empty($new)){
+            $new = new InfoSection();
         }
 
+        $new->footer_about = $r->footer_about;
+        $new->facebook_link = $r->facebook_link;
+        $new->twitter_link = $r->twitter_link;
+        $new->linkedin_link = $r->linkedin_link;
+        $new->save();
+       \Toastr::success('Successfully Saved','Success');
         return redirect()->back();
+
     }
 
-    public function frontend_settings_insights()
+
+  public function frontend_settings_insights()
     {
-        $info = InfoSection::first();
-        return view('admin.frontendSettings.insights', compact('info'));
+        return view('admin.frontendSettings.insights');
     }
 
     public function frontend_settings_insights_save(Request $r)
     {
-        try {
-            $infoSection = InfoSection::first();
-            if (empty($infoSection)) {
-                $infoSection = new InfoSection();
-            }
 
-            if ($r->has('events_participated')) {
-                $infoSection->events_participated = $r->events_participated;
-            }
-            if ($r->has('classes_completed')) {
-                $infoSection->classes_completed = $r->classes_completed;
-            }
-            if ($r->has('awards_won')) {
-                $infoSection->awards_won = $r->awards_won;
-            }
-            if ($r->has('student_enrolled')) {
-                $infoSection->student_enrolled = $r->student_enrolled;
-            }
-
-            $infoSection->save();
-
-            $r->session()->flash('success', 'Insights updated successfully.');
-        } catch (\Exception $e) {
-            $r->session()->flash('error', 'There was an error updating the insights.');
+        $new = InfoSection::first();
+        if(empty($new)){
+            $new = new InfoSection();
         }
 
+        $new->events_participated = $r->events_participated;
+        $new->classes_completed = $r->classes_completed;
+        $new->awards_won = $r->awards_won;
+        $new->student_enrolled = $r->student_enrolled;
+        $new->save();
+       \Toastr::success('Successfully Saved','Success');
         return redirect()->back();
+
     }
 
     public function visitors_ip(Request $request)
@@ -316,4 +286,5 @@ class FrontendController extends Controller
         $visitors = Visitor::orderBy('id','desc')->paginate(100);
         return view('admin.visitors_ip',compact('visitors'));
     }
+
 }

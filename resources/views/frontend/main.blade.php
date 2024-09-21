@@ -43,10 +43,8 @@
     <!-- Main Content Area -->
     <main id="body-content" class="body-non-overflow">
 
-        <section class="welcome-broke-grid" >
-            <!-- Content Section -->
-            @yield('content')
-        </section>
+         @yield('content')
+       
 
     </main>
 

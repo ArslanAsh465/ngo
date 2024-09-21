@@ -3,13 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\News;
 class HomeController extends Controller
 {
     // Home Page
     public function home()
     {
-        return view('frontend-page.home');
+        $news = News::get();
+        return view('frontend-page.home',compact('news'));
+    }
+
+    public function single_news($slug)
+    {
+        $news = News::where('slug',$slug)->first();
+        if(!$news){
+            abort(404);
+        }
+        return view('frontend-page.single_news',compact('news'));
     }
 
     // School for Deaf Page
@@ -76,5 +86,11 @@ class HomeController extends Controller
     public function about_us()
     {
         return view('frontend-page.about_us');
+    }
+
+    // Contact Us Page
+    public function contact_us()
+    {
+        return view('frontend-page.contact_us');
     }
 }

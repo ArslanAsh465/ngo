@@ -118,22 +118,37 @@
                 </ul>
             </li>
 
-
-            <!-- Donations -->
+            <!-- Location -->
             <li class="menu">
-                <a href="{{ route('admin.donation.index') }}" aria-expanded="false" class="dropdown-toggle">
+                <a href="#news" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                     <div class="">
-                        <span><strong> &dollar; </strong></span>
-                        <span>Donations</span>
+                        <span>&#9888; News </span>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
                     </div>
                 </a>
+                <ul class="collapse submenu list-unstyled" id="news" data-bs-parent="#accordionExample">
+                    <li>
+                        <a href="{{ route('admin.news.index') }}"> All </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('admin.news.create') }}"> Create </a>
+                    </li>
+                </ul>
             </li>
+
 
             <!-- Settings -->
             <li class="menu">
                 <a href="{{ route('admin.frontend_settings') }}" aria-expanded="false" class="dropdown-toggle">
                     <div class="">
-                        <span><strong> &#9881; </strong></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings">
+                            <path d="M12 8.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7z"></path>
+                            <path d="M19.4 15.5a7.5 7.5 0 0 0 0-7l1.8-2.5-2.1-2.1-2.5 1.8a7.5 7.5 0 0 0-7-7.4L9.5 1.2 7.4 3.3l1.8 2.5a7.5 7.5 0 0 0-7 7.4L1.1 15.5l2.1 2.1 2.5-1.8a7.5 7.5 0 0 0 7 7.4l2.5 1.8 2.1-2.1z"></path>
+                        </svg>
                         <span>Settings</span>
                     </div>
                 </a>

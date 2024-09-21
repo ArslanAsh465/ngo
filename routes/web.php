@@ -10,12 +10,25 @@ use App\Http\Controllers\DonationController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\NewsController;
 
+
+Route::get('/route-cache', function() {
+     Artisan::call('config:cache');
+     Artisan::call('cache:clear');
+     Artisan::call('view:clear');
+     Artisan::call('route:clear');
+     Artisan::call('optimize:clear');
+     Artisan::call('storage:link');
+     return 'Routes cache cleared';
+ });
+
 // Main Pages Routes
 Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/about-us', [HomeController::class, 'about_us'])->name('about_us');
 Route::get('/contact-us', [ContactController::class, 'index'])->name('contact_us.index');
 Route::post('/contact-us', [ContactController::class, 'store'])->name('contact_us.store');
 Route::get('/gallery', [HomeController::class, 'gallery'])->name('gallery');
+Route::get('/news/{slug}', [HomeController::class, 'single_news'])->name('news_single');
+
 
 Route::get('/campaigns/school-for-deaf', [HomeController::class, 'school_for_deaf'])->name('school_for_deaf');
 Route::get('/campaigns/almudassar-school-for-blind', [HomeController::class, 'school_for_blind'])->name('school_for_blind');
@@ -82,7 +95,7 @@ Route::middleware('auth')->prefix('admin')->group(function () {
 
     // Donation Routes
     Route::get('/donations', [DonationController::class, 'adminIndex'])->name('admin.donation.index');
-    Route::post('/donations', [DonationController::class, 'adminUpdate'])->name('admin.donation.update');
+    Route::post('/donations', [DonationController::class, 'adminStore'])->name('admin.donation.store');
 
     // News Routes
     Route::get('news', [NewsController::class, 'index'])->name('admin.news.index');

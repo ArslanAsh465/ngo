@@ -1,6 +1,6 @@
 @extends('frontend.main')
 
-@section('title', 'AL-MUDASSAR BARNALA BRANCH')
+@section('title', 'Barnala Branch')
 
 @section('content')
     <div class="container py-5">
@@ -16,7 +16,7 @@
                         <h2 class="font-weight-bold mb-3">AL-MUDASSAR BARNALA BRANCH</h2>
                     </div>
                     <div class="col-md-4">
-                        <a href="{{ route('donate.index') }}" class="btn btn-default btn-lg" role="button">
+                        <a href="#" class="btn btn-success btn-lg" role="button">
                             DONATE NOW
                         </a>
                     </div>
@@ -50,14 +50,14 @@
                     </div>
                 </div>
 
-                <div class="row bg-secondary mb-4">
+                <div class="row bg-success mb-4">
                     <div class="col-md-8">
                         <div class="p-3 text-white rounded">
                             <h3 class="font-weight-normal">Al-Mudassar Trust provides free education and boarding facilities for children with special needs. Please support this noble cause with your Zakah and Sadaqah donations.</h3>
                         </div>
                     </div>
                     <div class="col-md-4 d-flex align-items-center">
-                        <a href="{{ route('donate.index') }}" class="btn btn-default btn-lg w-100" rel="noopener">Donate Now</a>
+                        <a href="#" class="btn btn-dark btn-lg w-100" rel="noopener">Donate Now</a>
                     </div>
                 </div>
 

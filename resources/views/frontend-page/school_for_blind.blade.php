@@ -1,6 +1,6 @@
 @extends('frontend.main')
 
-@section('title', 'AL-MUDASSAR SCHOOL FOR BLIND')
+@section('title', 'School For Blind')
 
 @section('content')
     <div class="container py-5">
@@ -16,7 +16,7 @@
                         <h2 class="font-weight-bold mb-3">AL-MUDASSAR SCHOOL FOR BLIND</h2>
                     </div>
                     <div class="col-md-4">
-                        <a href="{{ route('donate.index') }}" class="btn btn-default btn-lg" role="button">
+                        <a href="#" class="btn btn-success btn-lg" role="button">
                             DONATE NOW
                         </a>
                     </div>
@@ -68,7 +68,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 d-flex align-items-center">
-                        <a href="{{ route('donate.index') }}" class="btn btn-default btn-lg w-100" rel="noopener">Donate Now</a>
+                        <a href="#" class="btn btn-dark btn-lg w-100" rel="noopener">Donate Now</a>
                     </div>
                 </div>
 

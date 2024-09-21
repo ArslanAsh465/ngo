@@ -12,7 +12,8 @@
 
             <div class="card">
                 <div class="card-body">
-                    <h4>Description</h4>
+                    <h2>{{$news->title}}</h2>
+                    <h5>Description</h5>
                     <p>{{ $news->description }}</p>
 
                     @if($news->image)

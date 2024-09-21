@@ -68,8 +68,8 @@
 
     @case('gallery')
         @php
-            $bgImage = asset('app-assets/frontend/assets/images/gallery.jpg');
-            $heading = 'GALLERY';
+            $bgImage = NULL;
+            $heading = NULL;
         @endphp
         @break
 
@@ -101,13 +101,21 @@
         @endphp
         @break
 
+    @case('news_single')
+        @php
+            $bgImage = NULL;
+            $heading = NULL;
+        @endphp
+        @break
+    
+
     @default
         @php
             $bgImage = 'https://default-image-url.com/default-image.jpg';
             $heading = 'DEFAULT HEADING';
         @endphp
 @endswitch
-
+@if($bgImage)
 <div class="sd-page-top-bg" style="background: url({{ $bgImage }}) no-repeat center center / cover; padding: 121px 0;">
     <div class="container">
         <div>
@@ -115,3 +123,4 @@
         </div>
     </div>
 </div>
+@endif

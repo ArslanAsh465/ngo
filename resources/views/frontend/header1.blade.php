@@ -59,6 +59,9 @@
                         <li class="nav-item">
                             <a class="nav-link text-grey" href="{{ route('contact_us.index') }}">CONTACT US</a>
                         </li>
+                        <li class="nav-item donate_now">
+                            <a class="nav-link" href="{{ route('donate.index') }}">DONATE NOW</a>
+                        </li>
                     </ul>
                 </div>
 

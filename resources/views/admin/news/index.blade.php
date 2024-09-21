@@ -20,6 +20,7 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr>
+                                <th>Title</th>
                                 <th>Description</th>
                                 <th>Image</th>
                                 <th>Actions</th>
@@ -28,6 +29,7 @@
                         <tbody>
                             @foreach($newsItems as $news)
                             <tr>
+                                <td>{{ $news->title }}</td>
                                 <td>{{ $news->description }}</td>
                                 <td>
                                     @if($news->image)

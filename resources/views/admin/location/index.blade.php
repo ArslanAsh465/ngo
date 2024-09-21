@@ -6,6 +6,22 @@
 <div class="container">
     <div class="row">
 
+        <!-- Display Session Message Start -->
+        <!-- Display success message -->
+        @if(session('success'))
+            <div class="alert alert-success">
+                {{ session('success') }}
+            </div>
+        @endif
+
+        <!-- Display error message -->
+        @if(session('error'))
+            <div class="alert alert-danger">
+                {{ session('error') }}
+            </div>
+        @endif
+        <!-- Display Session Message End -->
+
         <div class="col-md-12">
             <div class="alert alert-info">
                 <h2>Locations List</h2>

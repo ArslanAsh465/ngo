@@ -8,7 +8,7 @@
 <script src="{{asset('app-assets/frontend/assets/library/jflickrfeed/jflickrfeed.min.js')}}"></script>
 <script src="{{asset('app-assets/frontend/assets/library/jquery-waypoints/jquery.waypoints.min.js')}}"></script>
 <script src="{{asset('app-assets/frontend/assets/library/countdown/jquery.countdown.min.js')}}"></script>
-<script src="{{asset('app-assets/frontendassets/library/jquery-appear/jquery.appear.js') }}"></script>
+<script src="{{asset('app-assets/frontend/assets/library/jquery-appear/jquery.appear.js') }}"></script>
 <script src="{{asset('app-assets/frontend/assets/library/jquery-easing/jquery.easing.min.js')}}"></script>
 <script src="{{asset('app-assets/frontend/assets/library/jquery.counterup/jquery.counterup.min.js')}}"></script>
 <script src="{{asset('app-assets/frontend/assets/library/jquery-validate/jquery.validate.min.js')}}"></script>
