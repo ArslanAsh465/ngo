@@ -77,10 +77,4 @@ class HomeController extends Controller
     {
         return view('frontend-page.about_us');
     }
-
-    // Contact Us Page
-    public function contact_us()
-    {
-        return view('frontend-page.contact_us');
-    }
 }

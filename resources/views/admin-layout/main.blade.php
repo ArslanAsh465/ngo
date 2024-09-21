@@ -55,6 +55,18 @@
                 <div class="middle-content container-xxl p-0">
 
                     <div class="row layout-top-spacing">
+
+                        <!-- Display success or error messages -->
+                        @if (session('success'))
+                        <div class="alert alert-success">
+                            {{ session('success') }}
+                        </div>
+                        @elseif (session('error'))
+                        <div class="alert alert-danger">
+                            {{ session('error') }}
+                        </div>
+                        @endif
+
                         @yield('content')
                     </div>
 

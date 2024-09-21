@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Donation;
 use Illuminate\Http\Request;
 use App\Models\Bank;
+use App\Mail\DonationReceivedMail;
+use Illuminate\Support\Facades\Mail;
 
 class DonationController extends Controller
 {
@@ -15,7 +17,7 @@ class DonationController extends Controller
     {
         $banks = Bank::with('location')->get();
 
-        return view('donation.donate', compact('banks'));
+        return view('frontend-page.donate', compact('banks'));
     }
 
     /**
@@ -31,7 +33,33 @@ class DonationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        try {
+            $validated = $request->validate([
+                'amount' => 'required|string|min:1',
+                'first_name' => 'required|string|max:255',
+                'last_name' => 'required|string|max:255',
+                'email' => 'required|email|max:255',
+                'phone' => 'required|string|max:20',
+                'anonymous' => 'nullable|boolean',
+                'comment' => 'nullable|string|max:500',
+            ]);
+
+            $donation = Donation::create([
+                'amount' => $validated['amount'],
+                'first_name' => $validated['first_name'],
+                'last_name' => $validated['last_name'],
+                'email' => $validated['email'],
+                'phone' => $validated['phone'],
+                'anonymous' => $validated['anonymous'] ?? false,
+                'comment' => $validated['comment'] ?? null,
+            ]);
+
+            Mail::to($donation['email'])->send(new DonationReceivedMail($donation));
+
+            return redirect()->back();
+        } catch (\Exception $e) {
+            return redirect()->back();
+        }
     }
 
     /**
@@ -64,5 +92,25 @@ class DonationController extends Controller
     public function destroy(Donation $donation)
     {
         //
+    }
+
+    public function adminIndex()
+    {
+        $donations = Donation::all();
+        return view('admin.donation.index', compact('donations'));
+    }
+
+    public function adminUpdate(Request $request)
+    {
+        $donationId = $request->input('donation_id');
+        $statusChecked = $request->has('status');
+
+        $donation = Donation::find($donationId);
+        if ($donation) {
+            $donation->status = $statusChecked;
+            $donation->save();
+        }
+
+        return redirect()->back()->with('success', 'Statuses updated successfully.');
     }
 }

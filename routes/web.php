@@ -7,27 +7,28 @@ use App\Http\Controllers\LocationController;
 use App\Http\Controllers\Admin\FrontendController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DonationController;
-
-
-Route::get('/arslan', function () {
-    return view('arslan-user.home');
-});
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\NewsController;
 
 // Main Pages Routes
 Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/about-us', [HomeController::class, 'about_us'])->name('about_us');
-Route::get('/contact-us', [HomeController::class, 'contact_us'])->name('contact_us');
+Route::get('/contact-us', [ContactController::class, 'index'])->name('contact_us.index');
+Route::post('/contact-us', [ContactController::class, 'store'])->name('contact_us.store');
 Route::get('/gallery', [HomeController::class, 'gallery'])->name('gallery');
-Route::get('/education-services/school-for-deaf', [HomeController::class, 'school_for_deaf'])->name('school_for_deaf');
-Route::get('/education-services/school-for-blind', [HomeController::class, 'school_for_blind'])->name('school_for_blind');
-Route::get('/education-services/learning-disability', [HomeController::class, 'learning_disability'])->name('learning_disability');
-Route::get('/education-services/vocational-training', [HomeController::class, 'vocational_training'])->name('vocational_training');
-Route::get('/education-services/rehabilitation', [HomeController::class, 'rehabilitation'])->name('rehabilitation');
-Route::get('/education-services/barnala-branch', [HomeController::class, 'barnala_branch'])->name('barnala_branch');
-Route::get('/get-inspired/future-projects', [HomeController::class, 'future_projects'])->name('future_projects');
-Route::get('/get-inspired/success-stories', [HomeController::class, 'success_stories'])->name('success_stories');
-Route::get('/get-inspired/become-a-volunteer', [HomeController::class, 'become_a_volunteer'])->name('become_a_volunteer');
-Route::get('/donate', [DonationController::class, 'index'])->name('donate');
+
+Route::get('/campaigns/school-for-deaf', [HomeController::class, 'school_for_deaf'])->name('school_for_deaf');
+Route::get('/campaigns/almudassar-school-for-blind', [HomeController::class, 'school_for_blind'])->name('school_for_blind');
+Route::get('/campaigns/disability-centre', [HomeController::class, 'learning_disability'])->name('learning_disability');
+Route::get('/campaigns/vocational-training-centre', [HomeController::class, 'vocational_training'])->name('vocational_training');
+Route::get('/campaigns/physical-training-centre', [HomeController::class, 'rehabilitation'])->name('rehabilitation');
+Route::get('/campaigns/al-mudassar-barnala-branch', [HomeController::class, 'barnala_branch'])->name('barnala_branch');
+
+Route::get('/causes-list', [HomeController::class, 'future_projects'])->name('future_projects');
+Route::get('/success-stories', [HomeController::class, 'success_stories'])->name('success_stories');
+Route::get('/volunteers', [HomeController::class, 'become_a_volunteer'])->name('become_a_volunteer');
+Route::get('/donation', [DonationController::class, 'index'])->name('donate.index');
+Route::post('/donation', [DonationController::class, 'store'])->name('donate.store');
 
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
@@ -78,6 +79,19 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::post('/frontend/settings/footer/save', [FrontendController::class, 'frontend_settings_footer_save'])->name('admin.save.footer');
     Route::get('/frontend/settings/insights', [FrontendController::class, 'frontend_settings_insights'])->name('admin.frontend_settings_insights');
     Route::post('/frontend/settings/insights/save', [FrontendController::class, 'frontend_settings_insights_save'])->name('admin.save.insights');
+
+    // Donation Routes
+    Route::get('/donations', [DonationController::class, 'adminIndex'])->name('admin.donation.index');
+    Route::post('/donations', [DonationController::class, 'adminUpdate'])->name('admin.donation.update');
+
+    // News Routes
+    Route::get('news', [NewsController::class, 'index'])->name('admin.news.index');
+    Route::get('news/create', [NewsController::class, 'create'])->name('admin.news.create');
+    Route::post('news', [NewsController::class, 'store'])->name('admin.news.store');
+    Route::get('news/{news}', [NewsController::class, 'show'])->name('admin.news.show');
+    Route::get('news/{news}/edit', [NewsController::class, 'edit'])->name('admin.news.edit');
+    Route::put('news/{news}', [NewsController::class, 'update'])->name('admin.news.update');
+    Route::delete('news/{news}', [NewsController::class, 'destroy'])->name('admin.news.destroy');
 
 });
 

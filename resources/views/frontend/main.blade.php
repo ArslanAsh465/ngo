@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Site Title -->
-    <title>@yield('title', 'Trust App')</title>
+    <title>@yield('title') - AL-MUDASSAR TRUST</title>
 
     <!-- Site Icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('app-assets/frontend/assets/images/logo.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('app-assets/frontend/assets/images/favicon.png') }}">
 
     <!-- CSS Libraries and Stylesheets -->
     <link href="{{ asset('app-assets/frontend/assets/library/animate/animate.min.css') }}" rel="stylesheet">
@@ -32,11 +32,13 @@
     <!-- Loader Component -->
     @include('frontend.loader')
 
-    <!-- Header Component -->
-    @include('frontend.header')
-
-    <!-- Slider Component -->
-    @include('frontend.slider')
+    @if(Route::currentRouteName() == 'home')
+        @include('frontend.header')
+        @include('frontend.slider')
+    @else
+        @include('frontend.header1')
+        @include('frontend.slider1')
+    @endif
 
     <!-- Main Content Area -->
     <main id="body-content" class="body-non-overflow">
